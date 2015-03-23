@@ -1,0 +1,11 @@
+---
+layout: blogs
+title: Blog
+permalink: /blog/
+---
+
+{% for post in site.posts %}
+
+    {% include post_summary.html %}
+
+{% endfor %}

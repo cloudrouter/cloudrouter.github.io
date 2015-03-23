@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<div class="section-content blog-section blog-standard">
+    <div class="container">
+        <div class="blog-box">
+            <div class="blog-post single-post">
+                <div class="blog-content">
+                    {% assign post = page %}
+                    {% include post_title.html %}
+                    <div class="main-blog">
+                        {{ content }}
+                    </div>
+                </div>
+                {% include social_section.html %}
+                {% include comments.html %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+{% assign url = page.url|remove:'index.html' %}
+{% if url == '/' %}
+    {% assign page_classes = "home page page-id-55 page-template page-template-template-home page-template-template-home-php wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% elsif url == '/getting-started/' %}
+    {% assign page_classes = "page page-id-4 page-template-default wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% elsif url == '/security/' %}
+    {% assign page_classes = "page page-id-20 page-template-default wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% elsif url == '/community/' %}
+    {% assign page_classes = "page page-id-12 page-template-default wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% elsif url == '/features/' %}
+    {% assign page_classes = "page page-id-125 page-template-default wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% elsif url == '/about/' %}
+    {% assign page_classes = "page page-id-14 page-template-default wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% elsif url == '/blog/' %}
+    {% assign page_classes = "page page-id-256 page-template page-template-template-blog_standard page-template-template-blog_standard-php wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% else %}
+    {% assign page_classes = "single single-post postid-327 single-format-standard wpb-js-composer js-comp-ver-4.3.5 vc_responsive" %}
+{% endif %}
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="{{ page_classes }}">
+
+{% include preloader.html %}
+
+<div id="container" class="header2">
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+</div>
+
+{% include jsfooter.html %}
+
+</body>
+
+</html>

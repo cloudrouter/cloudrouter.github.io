@@ -1,0 +1,384 @@
+/* Set the size and font of the tab widget */
+.tabGroup {
+    background: none repeat scroll 0 0 #F3F1EB;
+    border: 1px solid #DEDBD1;
+    padding: 10px;
+    width: 750px;
+    height: auto;
+    float: left;
+}
+
+.tabGroup div.questionCon{
+    width: 100%;
+    float: left;
+    padding-top: 5px;
+}
+
+.tabGroup select, .tabGroup label, .tabGroup div {
+    font-size: 12px;
+}
+
+div.questionCon.qsubmit{
+    text-align: center;
+}
+
+.tabGroup div.questionCon.disabled{
+    color: #888;
+}
+
+.tabGroup div.question{
+	padding-right: 10px;
+    float: left;
+    text-align: right;
+    width: 114px;
+}
+
+.tabGroup div.inputCon{
+    float:left;
+}
+  
+/* Configure the radio buttons to hide off screen */
+.tabGroup > input[type="radio"] {
+    position: absolute;
+    left:-100px;
+    top:-100px;
+}
+  
+/* Configure labels to look like tabs */
+.tabGroup > input[type="radio"] + label {
+    /* inline-block such that the label can be given dimensions */
+    display: inline-block;
+  
+    /* A nice curved border around the tab */
+    border: 1px solid #DEDBD1;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+      
+    /* the bottom border is handled by the tab content div */
+    border-bottom: 0;
+  
+    /* Padding around tab text */
+    padding: 5px 10px;
+  
+    /* Set the background color to default gray (non-selected tab) */
+    background-color:#ddd;
+}
+  
+/* Focused tabs need to be highlighted as such */
+.tabGroup > input[type="radio"]:focus + label {
+    border:1px dashed #DEDBD1;
+}
+  
+/* Checked tabs must be white with the bottom border removed */
+.tabGroup > input[type="radio"]:checked + label {
+    background-color:white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+}
+  
+/* The tab content must fill the widgets size and have a nice border */
+.tabGroup > div {
+    display: none;
+    border: 1px solid #DEDBD1;
+    background-color: white;
+    padding: 10px 0px;
+    height: auto;
+    overflow: auto;
+    margin-top: -1px;
+      
+    border-radius: 0 5px 5px 5px;
+    -moz-border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+}
+  
+/* This matchs tabs displaying to thier associated radio inputs */
+#wpfc-options:checked ~ .tab1, #wpfc-deleteCache:checked ~ .tab2, #wpfc-cacheTimeout:checked ~ .tab3, #wpfc-imageOptimisation:checked ~ .tab4, #wpfc-premium:checked ~ .tab5, #wpfc-exclude:checked ~ .tab6 {
+    display: block;
+}
+/* for lef panel */
+#toplevel_page_WpFastestCacheOptions img{
+    padding: 0 !important;
+    margin-left: 5px !important;
+}
+#toplevel_page_WpFastestCacheOptions div.wp-menu-name{
+    margin-left: 0 !important;
+}
+.question:after {
+    content: ":";
+}
+.inputCon input[type="checkbox"]{
+    margin-right: 5px;
+}
+.get-info {
+    float: left;
+    padding-left: 10px;
+}
+#rule-help-tip {
+    width: 500px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 4px 4px 10px #CCCCCC;
+    display: block;
+    padding: 10px 10px 0;
+    position: absolute;
+}
+
+#rule-help-tip h4 {
+    color: #6397CB;
+    margin-top: 0;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+h1.summary-rec {
+    border-bottom: 0 none;
+    color: #777777;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0 0 0.5em;
+}
+
+.close-window {
+    background: url("../images/close-wiz-sprite.png") no-repeat scroll 0 -19px rgba(0, 0, 0, 0);
+    height: 19px;
+    width: 22px;
+    float: right;
+}
+.omni_admin_sidebar {
+    float: right;
+    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    font-size: 12px;
+    margin-right: 50px;
+    width: 222px;
+}
+
+.omni_admin_sidebar_section {
+    background-color: #F6F6F6;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 0 0 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.omni_admin_sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.omni_admin_sidebar li {
+    font-size: 11px;
+    line-height: 16px;
+    list-style: disc outside none;
+    margin: 5px 0 5px 20px;
+}
+
+.omni_admin_sidebar h3 {
+    margin: 0 0 10px;
+}
+.success-wpfc, .error-wpfc{
+    background-position: 10px center !important;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+.success-wpfc{
+    border-color: #4F8A10 !important;
+    color: #4F8A10 !important;
+    background: #DFF2BF url("../images/success.png") no-repeat 10px !important;
+}
+.success-wpfc p, .error-wpfc p{
+    padding: 2px 2px 2px 40px !important;
+}
+.error-wpfc{
+    border-color: #D8000C !important;
+    color: #D8000C !important;
+    background: #FFBABA url("../images/error.png") no-repeat 10px !important;
+}
+.omni_admin_sidebar_section label {
+    font-size: 11px;
+}
+
+#vote-us{
+    border-color: #D09847; 
+    background: url("../images/facebook-like-xxl.png") #E39124 no-repeat 103% 130%; 
+    background-size: 30%;
+    cursor: pointer;
+}
+
+#wpfc-beta{
+    padding-right: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+#deleteCron{
+    float:right;
+    margin-right:5px;
+    padding: 3px;
+}
+
+#deleteCron:hover{
+    background-color:#FAEBD7;
+}
+form.delete-line{
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+form.delete-line .left{
+    width: 25%;
+    float: left;
+}
+form.delete-line .right{
+    width: 75%;
+    float: left;
+}
+
+form.delete-line .left .submit{
+    padding-top: 0;
+    float: left;
+    padding-left: 20px;
+}
+form.delete-line .left .submit input{
+    height: 65px;
+    width: 165px;
+    white-space: pre-line !important;
+}
+.revert{
+    width:16px;
+    height:16px;
+    vertical-align: middle;
+    margin: auto;
+    position:relative;
+    cursor:pointer;
+    
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    border:1px solid #aaa;
+    background:#ddd;
+    padding:3px;
+    
+    background: rgb(255,255,255) url("../images/cancel.png") no-repeat center; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))) url("../images/cancel.png") no-repeat center; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* IE10+ */
+    background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) no-repeat center; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ) url("../images/cancel.png") no-repeat center; /* IE6-9 */
+}
+
+.revert:hover{
+    border-color:#000;
+    
+    background: rgb(255,255,255) url("../images/cancel.png") no-repeat center; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))) url("../images/cancel.png") no-repeat center; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* IE10+ */
+    background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) url("../images/cancel.png") no-repeat center; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ) url("../images/cancel.png") no-repeat center; /* IE6-9 */
+}
+
+.revert:active{
+    background-color: #F5F5F5;
+}
+
+#revert-loader{
+    display: none;
+    background: rgba(255, 255, 255, .7) url(../images/loader.gif) no-repeat center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+}
+.wpfc-loading-statics{
+    background-repeat: no-repeat;
+    background-image: url(../images/loader-statics.gif);
+    background-position: 0 0;
+}
+div.wpfc-loading-statics{
+    height: 16px;
+}
+p.wpfc-loading-statics{
+    background-position: 44px 6px;
+    height: 27px;
+}
+#wpfc-optimized-statics-reduction:not(.wpfc-loading-statics):after{
+    content: " KB";
+}
+#wpfc-statics-right ul li{
+    height:35px;
+    padding:0;
+    margin-bottom:15px;
+    width:150px;
+}
+#wpfc-statics-right ul:last-child{
+    padding-left: 10px;
+}
+#wpfc-statics-right ul:last-child li{
+    width: 220px;
+    height: auto;
+}
+
+span.deleteicon {
+    position: relative;
+}
+span.deleteicon input {
+    padding-right: 16px;
+}
+span.deleteicon span {
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/search_reset.jpg") no-repeat scroll;
+    cursor: pointer;
+}
+span.deleteicon span.cleared {
+    background: none;
+}
+#wpfc-image-list-filter:-moz-focusring, #wpfc-image-per-page:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+#buy-image-credit{
+    border: 1px solid; 
+    color: white; 
+    border-radius: 26px; 
+    background-color: rgb(61, 207, 60); 
+    cursor: pointer; 
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+.wpfc-exclude-rule-line{
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+.wpfc-exclude-rule-line-left{
+    width: 100px;
+    float: left;
+}
+.wpfc-exclude-rule-line-middle{
+    width: 400px;
+    float: left;
+}
+.wpfc-exclude-rule-line-add, .wpfc-exclude-rule-line-delete{
+    float: left;
+    padding-top: 7px;
+    cursor: pointer;
+    width: 20px;
+}
+.wpfc-exclude-rule-line-delete{
+    display: none;
+}
