@@ -23,6 +23,7 @@ Location:</strong> <strong>/etc/pki/rpm-gpg/RPM-GPG-KEY-CLOUDROUTER </strong>
 <strong>Download: <a href="https://pgp.mit.edu/pks/lookup?op=get&amp;search=0x0A1E8B12191F16B0">pgp.mit.edu</a></strong></pre>
 
 For added security, the CloudRouter Project key is stored on a hardware security module (HSM). For more details, see the blog post &#8220;<a title="Signing RPMs using the Nitrokey hardware security module (HSM)" href="http://cloudrouter.org/signing-rpms-using-the-nitrokey-hardware-security-module-hsm/security.md">Signing RPMs using the Nitrokey hardware security module (HSM</a>)&#8221;.
+
 ## <span id="Reporting_security_issues" class="mw-headline">Reporting security issues</span>
 
 Please report any security issues you find in CloudRouter to: <a href="mailto:security@cloudrouter.org">security@cloudrouter.org</a>
