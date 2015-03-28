@@ -14,9 +14,9 @@ The CloudRouter source is available on GitHub:
 
 **File a bug or RFE**
 
-We use GitHub issues to track bugs and RFEs:
+We use JIRA to track bugs and RFEs:
 
-<https://github.com/iixlabs/cloudrouter/issues>
+<https://cloudrouter.atlassian.net/>
 
 **Contributing**
 
