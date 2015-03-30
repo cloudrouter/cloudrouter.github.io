@@ -8,7 +8,4 @@
     <li><a href="{{ "/category/" | append: tag | append: "/" | prepend: site.baseurl }}" rel="category tag">
         {{ tag }}</a></li>
     {% endfor %}
-    <li><a href="{{ site.baseurl }}{{ post.url | append: " #respond" }}"
-        title="{{ "Comment on " | append: post.title }}">{{ post.comments_count }}
-        Comment{% if post.comments_count != 1 %}s{% endif %}</a></li>
 </ul>
