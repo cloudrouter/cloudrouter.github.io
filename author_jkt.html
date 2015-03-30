@@ -1,0 +1,14 @@
+---
+layout: blogs
+title: Posts by dfj
+permalink: /author/jkt/
+author: jktAdded
+---
+
+<ul>
+{% for post in site.posts do %}
+  {% if post.author == page.author %}
+    {% include post_summary.html %}
+  {% endif %}
+{% endfor %}
+</ul>
