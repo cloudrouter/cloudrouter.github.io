@@ -61,4 +61,4 @@ At this point you have CloudRouter running, but cannot login. For enhanced secur
 
 **Next Steps**
 
-CloudRouter 1.0 beta is based on the <a href="https://getfedora.org/en/cloud/">Fedora 20 cloud image</a>, and includes a distribution of OpenDaylight Helium SR3. For information on installing and running OpenDaylight on CloudRouter, see the <a href="http://wiki.cloudrouter.org/index.php/Running_OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
+CloudRouter 1.0 beta is based on the <a href="https://getfedora.org/en/cloud/">Fedora 20 cloud image</a>, and includes a distribution of OpenDaylight Helium SR3. For information on installing and running OpenDaylight on CloudRouter, see the <a href="https://github.com/cloudrouter/cloudrouter.github.io/wiki/Running-OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
