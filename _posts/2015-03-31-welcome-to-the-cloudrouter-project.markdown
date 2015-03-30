@@ -34,7 +34,7 @@ aspects of security.
 
 CloudRouter is based on Fedora 20 plus updates, and includes several
 pre-installed packages to support software-defined interconnect, such as
-OpenDaylight (Helium SR2 is included in the beta).  As
+OpenDaylight (Helium SR3 is included in the beta).  As
 of today CloudRouter is available as a pre-configured disk image (the
 KVM hypervisor is recommended), a Docker image, and an OSv image.
 
