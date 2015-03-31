@@ -20,15 +20,15 @@ Two CloudRouter 1.0 Beta images are available: minimal and full. The minimal ima
         </tr>
         <tr>
             <td>Minimal</td>
-            <td><a href="https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-Minimal-20150321.x86_64.raw.xz">Download</a> 374 MB</td>
-            <td><a href="https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-Minimal-20150321.checksum.txt">Download</a></td>
-            <td><a href="https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-Minimal-20150321.manifest.txt">Download</a> 8 KB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150321.x86_64.raw.xz">Download</a> 374 MB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150321.checksum.txt">Download</a></td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150321.manifest.txt">Download</a> 8 KB</td>
         </tr>
         <tr>
             <td>Full</td>
-            <td><a href="https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-Full-20150321.x86_64.raw.xz">Download</a> 947 MB</td>
-            <td><a href="https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-Full-20150321.checksum.txt">Download</a></td>
-            <td><a href="https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-Full-20150321.manifest.txt">Download</a> 12 KB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150321.x86_64.raw.xz">Download</a> 947 MB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150321.checksum.txt">Download</a></td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150321.manifest.txt">Download</a> 12 KB</td>
         </tr>
     </tbody>
 </table>
@@ -55,7 +55,7 @@ d73619f8aea2df8be134ab6ad28cb7ad89711388a0774ac6009cefcfa82aa3ccd4a7a3de4b59c450
 
 At this point you have CloudRouter running, but cannot login. For enhanced security, the CloudRouter image ships without any default credentials. A default &#8220;cloudrouter&#8221; user is provided, but no password is set. To set a password, you must create a metadata ISO image.
 
-* Create a metadata ISO based on the instructions in <a href="https://www.technovelty.org//linux/running-cloud-images-locally.html">this blog post</a>. Alternatively, a pre-built metadata ISO is <a href="https://repo.cloudrouter.org/repo/beta/images/cr-init.iso">available here</a>. This ISO sets the fedora user&#8217;s password to &#8220;CloudRouter&#8221;. **DO NOT** use this ISO in production, it is strictly for test and demonstration purposes.
+* Create a metadata ISO based on the instructions in <a href="https://www.technovelty.org//linux/running-cloud-images-locally.html">this blog post</a>. Alternatively, a pre-built metadata ISO is <a href="https://repo.cloudrouter.org/beta/images/cr-init.iso">available here</a>. This ISO sets the fedora user&#8217;s password to &#8220;CloudRouter&#8221;. **DO NOT** use this ISO in production, it is strictly for test and demonstration purposes.
 * In virt-manager, attach the metadata ISO to the CloudRouter VM as a CDROM storage device.
 * Reboot your VM and login. Enjoy!
 
