@@ -10,7 +10,7 @@ CloudRouter is a fully open-source Linux distribution that enables software-defi
 
 The CloudRouter source is available on GitHub:
 
-<https://github.com/iixlabs/cloudrouter>
+<https://github.com/cloudrouter>
 
 **File a bug or RFE**
 
