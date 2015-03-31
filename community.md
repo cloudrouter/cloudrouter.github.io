@@ -10,7 +10,7 @@ CloudRouter is a fully open-source Linux distribution that enables software-defi
 
 The CloudRouter source is available on GitHub:
 
-<https://github.com/iixlabs/cloudrouter>
+<https://github.com/cloudrouter>
 
 **File a bug or RFE**
 
@@ -29,3 +29,9 @@ The <users@lists.cloudrouter.org> mailing list is a forum for discussing usage o
 The <devel@lists.cloudrouter.org> mailing list is a forum for discussing development of CloudRouter and associated technologies. To subscribe to the devel list, go to: <http://lists.cloudrouter.org/mailman/listinfo/devel/>
 
 For more real-time discussion, join us on IRC: irc.freenode.net #cloudrouter
+
+**Code of Conduct**
+
+The CloudRouter Project is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, or religion.  We do not tolerate harassment of participants in any form.
+
+The code of conduct applies to all CloudRouter Project spaces, both online and off.  Anyone who violates this code of conduct may be sanctioned or expelled from these spaces at the discretion of the CloudRouter response team.
