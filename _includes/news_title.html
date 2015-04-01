@@ -1,0 +1,5 @@
+<h2><a href="{{ news_item.link }}">{{ news_item.title }}</a></h2>
+<ul class="post-tags">
+    <li>at {{ news_item.outlet }}</li>
+    <li>{{ news_item.date | date: '%a %B %d %Y' }}</li>
+</ul>
