@@ -28,6 +28,8 @@ The <users@lists.cloudrouter.org> mailing list is a forum for discussing usage o
 
 The <devel@lists.cloudrouter.org> mailing list is a forum for discussing development of CloudRouter and associated technologies. To subscribe to the devel list, go to: <http://lists.cloudrouter.org/mailman/listinfo/devel/>
 
+To ask a question about CloudRouter, go to: <https://cloudrouter.atlassian.net/wiki/questions>
+
 For more real-time discussion, join us on IRC: irc.freenode.net #cloudrouter
 
 **Code of Conduct**
