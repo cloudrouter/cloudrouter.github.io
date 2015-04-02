@@ -20,15 +20,15 @@ Two CloudRouter 1.0 Beta images are available: minimal and full. The minimal ima
         </tr>
         <tr>
             <td>Minimal</td>
-            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150321.x86_64.raw.xz">Download</a> 374 MB</td>
-            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150321.checksum.txt">Download</a></td>
-            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150321.manifest.txt">Download</a> 8 KB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150401.x86_64.raw.xz">Download</a> 376 MB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150401.checksum.txt">Download</a></td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150401.manifest.txt">Download</a> 8 KB</td>
         </tr>
         <tr>
             <td>Full</td>
-            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150321.x86_64.raw.xz">Download</a> 947 MB</td>
-            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150321.checksum.txt">Download</a></td>
-            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150321.manifest.txt">Download</a> 12 KB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150401.x86_64.raw.xz">Download</a> 947 MB</td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150401.checksum.txt">Download</a></td>
+            <td><a href="https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150401.manifest.txt">Download</a> 12 KB</td>
         </tr>
     </tbody>
 </table>
@@ -42,14 +42,14 @@ the KVM hypervisor with virt-manager is recommended. To install the image using 
 
 * Uncompress the image:
 
-<pre>$ unxz CloudRouter-Beta-Full-20150321.x86_64.raw.xz</pre>
+<pre>$ unxz CloudRouter-Beta-Full-20150401.x86_64.raw.xz</pre>
 
 * Verify that the SHA-512 checksum is correct:
 
-<pre>$ sha512sum CloudRouter-Beta-Full-20150321.x86_64.raw.xz
-d73619f8aea2df8be134ab6ad28cb7ad89711388a0774ac6009cefcfa82aa3ccd4a7a3de4b59c4503307c39258b2c6934234b501059cca693d6f76664bae8ac2  CloudRouter-Beta-Full-20150321.x86_64.raw.xz</pre>
+<pre>$ sha512sum CloudRouter-Beta-Full-20150401.x86_64.raw.xz 
+20fb13191b3fa43a60e96321a80d4e94c7a4c66f06ff59cc336e7dea193ff28b4a18b3cd15cf6d1d0e4e83c0ba4545a3d395f8bc337f9ca1167769fac24edd7a  CloudRouter-Beta-Full-20150401.x86_64.raw.xz</pre>
 
-* Create a new virtual machine in virt-manager. When prompted, select the &#8220;Import existing disk image&#8221; option. Select CloudRouter-Beta-Full-20150321.x86_64.raw as the disk image. Alternatively, use virsh as shown in <a href="http://youtu.be/ISUJaYv0hg8">this video</a>.
+* Create a new virtual machine in virt-manager. When prompted, select the &#8220;Import existing disk image&#8221; option. Select CloudRouter-Beta-Full-20150401.x86_64.raw as the disk image. Alternatively, use virsh as shown in <a href="http://youtu.be/ISUJaYv0hg8">this video</a>.
 * Select appropriate memory and CPU resources. 2048MB memory and 2 vCPUs are recommended.
 * Start the virtual machine.
 
