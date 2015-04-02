@@ -6,6 +6,8 @@ categories: cloudrouter releases
 author: dfj
 ---
 
+**By David Jorm and Don Marti**
+
 Most users are aware of cloud computing as a general term behind such trends as "Software as a Service," where sites such as Salesforce.com can replace software run by a company IT department, or "Infrastructure as a Service" where virtual machines rented by the hour can replace conventional servers. But today, the technologies behind the cloud are changing the way that we connect the Internet at the most fundamental level, through Software Defined Interconnection (SDI).
 
 **What is SDI?**
@@ -31,3 +33,9 @@ OSv’s high performance and low overhead allows for high density of VMs on stan
 **Conclusion**
 
 While Internet applications have gained from cloud technologies, the fundamental lower layers are still coming up to speed. OpenDaylight and OSv are bringing cloud economics to the lower levels of the stack.
+
+**About the authors**
+
+**David** is a product security engineer based in Brisbane, Australia. He currently leads product security efforts for IIX, a software-defined interconnection company. David has been involved in the security industry for the last 15 years. During this time he has found high-impact and novel flaws in dozens of major Java components. He has worked for Red Hat’s security team, led a Chinese startup that failed miserably, and wrote the core aviation meteorology system for the southern hemisphere. In his spare time he tries to stop his two Dachshunds from taking over the house.
+
+**Don** is a technical marketing manager for Cloudius Systems, the OSv company. He has written for Linux Weekly News, Linux Journal, and other publications. He co-founded the Linux consulting firm Electric Lichen, which was acquired by VA Linux Systems. Don has served as president and vice president of the Silicon Valley Linux Users Group and on the program committees for Uselinux, Codecon, and LinuxWorld Conference and Expo.
