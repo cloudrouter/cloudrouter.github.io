@@ -1,9 +1,5 @@
 {% assign url = page.url|remove:'index.html' %}
-{% if url == '/' or url == '/about/' or url == '/features/' or url == '/community/' or url == '/security/' or url == '/getting-started/' %}
-    {% assign banner_image_loc = "/wp-content/uploads/2015/01/12.jpg" %}
-{% else %}
-    {% assign banner_image_loc = "/wp-content/uploads/2015/02/16.jpg" %}
-{% endif %}
+{% assign banner_image_loc = "/wp-content/uploads/2015/01/12.jpg" %}
 
 <div class="section-content page-banner-section"
      style="background-image: url('{{ banner_image_loc | prepend: site.baseurl }}');background-size: cover;">
