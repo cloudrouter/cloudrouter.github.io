@@ -33,6 +33,8 @@ Two CloudRouter 1.0 Beta images are available: minimal and full. The minimal ima
     </tbody>
 </table>
 
+**Note**: CloudRouter is not provided or supported by the Fedora Project. Official Fedora software is available through the <a href="http://fedoraproject.org">Fedora Project website</a>.
+
 **Install**
 
 <ul>
