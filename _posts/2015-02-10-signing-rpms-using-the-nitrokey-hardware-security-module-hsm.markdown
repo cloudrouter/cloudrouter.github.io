@@ -6,7 +6,7 @@ categories: cloudrouter releases
 author: dfj
 ---
 
-The CloudRouter project takes security very seriously. Cryptographic signatures are used to ensure the integrity of the software we distribute. CloudRouter 1.0 beta is based on the Fedora 20 cloud image. Most packages are provided by the Fedora repositories. For details on how these packages are signed, see the <a href="http://fedoraproject.org/wiki/Release_package_signing">Fedora documentation</a>. Additional packages such as OpenDaylight are provided by the CloudRouter repositories. These packages are signed using the CloudRouter Project key.
+The CloudRouter project takes security very seriously. Cryptographic signatures are used to ensure the integrity of the software we distribute. CloudRouter 1.0 beta is a Fedora Remix. Most packages are provided by the Fedora repositories. For details on how these packages are signed, see the <a href="http://fedoraproject.org/wiki/Release_package_signing">Fedora documentation</a>. Additional packages such as OpenDaylight are provided by the CloudRouter repositories. These packages are signed using the CloudRouter Project key.
 
 <span dir="ltr">In order to ensure maximum security for our community, we are using a dedicated signing server with a hardware security module (HSM) that is not connected to the Internet.  This drastically reduces the risk of a remote attacker compromising the CloudRouter Project key and attempting to sign malicious packages as legitimate components.</span>
 

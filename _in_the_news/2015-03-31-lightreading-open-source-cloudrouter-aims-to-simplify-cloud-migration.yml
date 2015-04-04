@@ -3,5 +3,5 @@ title: Open Source 'CloudRouter' Aims to Simplify Cloud Migration
 outlet: LightReading
 link: http://www.lightreading.com/ethernet-ip/routers/open-source-cloudrouter-aims-to-simplify-cloud-migration/d/d-id/714769
 date: 2015-03-31
-excerpt: CloudRouter can run on bare metal, as a virtual image in a hypervisor, or in container images in the cloud, Turner says. The software "incorporates the latest release of OpenDaylight to provide secure network programmability to enable software-defined networking (SDN) and create a solid foundation for network function virtualization (NFV) for networks at any size and scale," CloudRouter said in a statement. The project will "maintain a stable and up-to-date Linux distribution based on Fedora."
+excerpt: CloudRouter can run on bare metal, as a virtual image in a hypervisor, or in container images in the cloud, Turner says. The software "incorporates the latest release of OpenDaylight to provide secure network programmability to enable software-defined networking (SDN) and create a solid foundation for network function virtualization (NFV) for networks at any size and scale," CloudRouter said in a statement. The project will "maintain a stable and up-to-date Linux distribution."
 ---

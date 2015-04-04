@@ -32,7 +32,7 @@ foundation of CloudRouter development, and will continue to be going
 forward.  I am thankful to have David Jorm on the team to oversee all
 aspects of security.
 
-CloudRouter is based on Fedora 20 plus updates, and includes several
+CloudRouter is a Fedora Remix, and includes several
 pre-installed packages to support software-defined interconnect, such as
 OpenDaylight (Helium SR3 is included in the beta).  As
 of today CloudRouter is available as a pre-configured disk image (the
