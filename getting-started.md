@@ -8,7 +8,7 @@ The CloudRouter project aims to provide a variety of cloud-ready distribution fo
 
 **Download**
 
-Two CloudRouter 1.0 Beta images are available: minimal and full. The minimal image includes the Fedora 20 base with updates applied and the CloudRouter repo pre-configured. The full image also includes several pre-installed packages to support software-defined interconnect, such as Bird, Quagga, and OpenDaylight.
+Two CloudRouter 1.0 Beta images are available: minimal and full. The minimal image is a Fedora Remix, with updates applied and the CloudRouter repo pre-configured. The full image also includes several pre-installed packages to support software-defined interconnect, such as Bird, Quagga, and OpenDaylight.
 
 <table style="border-spacing: 20px; border-collapse: separate;">
     <tbody>
