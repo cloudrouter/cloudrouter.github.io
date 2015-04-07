@@ -20,7 +20,7 @@ We use JIRA to track bugs and RFEs:
 
 **Contributing**
 
-To contribute to the CloudRouter project, just fork the repo and send pull requests with any changes. We love getting pull requests! Frequent contributors will be granted access to commit directly to the CloudRouter repo.
+To contribute to the CloudRouter project, just fork the repo and send pull requests with any changes. We love getting pull requests! Frequent contributors will be granted access to commit directly to the CloudRouter repo.  For more details about contributing, please visit <a href="{{ site.baseurl }}/contributing/">{{ site.url }}{{ site.baseurl }}/contributing/</a>.
 
 **Community resources**
 
