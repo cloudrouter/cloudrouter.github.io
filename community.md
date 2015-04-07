@@ -12,6 +12,10 @@ The CloudRouter source is available on GitHub:
 
 <https://github.com/cloudrouter>
 
+**Documentation**
+
+<https://cloudrouter.atlassian.net/wiki/display/CPD/CloudRouter+Project+Documentation>
+
 **File a bug or RFE**
 
 We use JIRA to track bugs and RFEs:
