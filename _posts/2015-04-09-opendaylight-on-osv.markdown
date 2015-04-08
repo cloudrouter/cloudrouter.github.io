@@ -116,4 +116,4 @@ By specifying a new java.ext.dirs value, the default value of /usr/lib/jvm/java/
 -Djava.ext.dirs=/usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext:/opendaylight/lib/ext
 ```
 
-With this fix in place, a patch was [submitted upstream](https://github.com/cloudius-systems/osv-apps/commit/f4e3f13e8c0fbf37405858e5f38ca1fac13d5d57) to complete the upgrade to OpenDaylight Helium. For more information on running OpenDaylight on OSv, see the [CloudRouter wiki](http://wiki.cloudrouter.org/index.php/Running_CloudRouter_OSv_images).
+With this fix in place, a patch was [submitted upstream](https://github.com/cloudius-systems/osv-apps/commit/f4e3f13e8c0fbf37405858e5f38ca1fac13d5d57) to complete the upgrade to OpenDaylight Helium. The CloudRouter project now provides a distribution of OpenDaylight Helium running on OSv. For more information, see the [CloudRouter wiki](http://wiki.cloudrouter.org/index.php/Running_CloudRouter_OSv_images).
