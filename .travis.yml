@@ -1,0 +1,12 @@
+language: bash
+
+script: 
+  - ./contrib-shared/commit-msg-verify.sh origin/$TRAVIS_BRANCH..FETCH_HEAD
+
+notifications:
+  irc:
+    channels:
+      - "chat.freenode.net#cloudrouter"
+    on_success: always
+    on_failure: always
+    skip_join: true
