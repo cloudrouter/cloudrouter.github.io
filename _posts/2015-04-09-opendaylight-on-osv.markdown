@@ -12,7 +12,7 @@ As discussed in a [previous blog post](https://cloudrouter.org/cloudrouter/relea
 
 First, we should take a quick look at [capstan](http://osv.io/capstan/), the tool used to simplify building and running OSv application images. The process of building the application is driven by a Makefile, using standard Makefile syntax. Here is a snapshot of the current OpenDaylight Helium Makefile for OSv:
     
-```
+~~~~~~
 .PHONY: module
 
 VERSION := 0.2.3-Helium-SR3
@@ -34,11 +34,11 @@ ROOTFS: ROOTFS/opendaylight
 
 clean:
         rm -rf distribution-karaf-$(VERSION) ROOTFS
-```
+~~~~~~
 
 Since OpenDaylight is a distributed as a pre-compiled Java application, the Makefile just needs to download and extract an OpenDaylight zip distribution. The process of running the application is driven by a Capstanfile, using a syntax similar to Dockerfiles. Here is a snapshot of the current OpenDaylight Helium Capstanfile:
     
-```
+~~~~~~
 base: cloudius/osv-openjdk
 
 cmdline: >
@@ -65,7 +65,7 @@ cmdline: >
   org.apache.karaf.main.Main
 
 build: make
-```
+~~~~~~
 
 The base element specifies that this image should be built on top of the existing osv-openjdk image. This automatically provides the JDK environment necessary to run OpenDaylight. The cmdline element specifies the command to be executed in order to run OpenDaylight.
 
@@ -73,7 +73,7 @@ The base element specifies that this image should be built on top of the existin
 
 After modifying the Makefile and Capstanfile to upgrade to OpenDaylight Helium, the capstan build process worked fine, but the image would throw a fatal exception at runtime:
 
-```
+~~~~~~
 $ capstan run opendaylight
 Created instance: opendaylight
 OSv v0.16
@@ -100,7 +100,8 @@ Caused by: java.lang.ClassNotFoundException: io.osv.OsvSystemClassLoader
     at java.security.AccessController.doPrivileged(Native Method)
     at java.lang.ClassLoader.initSystemClassLoader(ClassLoader.java:1494)
     at java.lang.ClassLoader.getSystemClassLoader(ClassLoader.java:1474)
-```
+~~~~~~
+
 
 Note that the "chdir: Quota exceeded" error was transient and unpredictable, but the ClassNotFoundException was consistent. Usually a ClassNotFoundException is due to a dependency missing on the classpath. After verifying that the classpath contained all the necessary classes, we were left unsure what was causing the exception. We initially thought it could be a [known issue]( https://github.com/cloudius-systems/osv/issues/527) related to the sequence of arguments provided, but that was not the culprit.
 
@@ -108,14 +109,14 @@ Note that the "chdir: Quota exceeded" error was transient and unpredictable, but
 
 After much head scratching, we realized that io.osv.OsvSystemClassLoader is loaded as a Java extension. This means it is not resolved via the classpath, but via the path specified by the java.ext.dirs property. The initial OpenDaylight Helium Capstanfile we wrote contained:
 
-```
+~~~~~~
 -Djava.ext.dirs=/opendaylight/lib/ext
-```
+~~~~~~
 
 By specifying a new java.ext.dirs value, the default value of /usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext was being overriden. The fix was to add these paths to the value specified in the Capstanfile:
 
-```
+~~~~~~
 -Djava.ext.dirs=/usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext:/opendaylight/lib/ext
-```
+~~~~~~
 
 With this fix in place, a patch was [submitted upstream](https://github.com/cloudius-systems/osv-apps/commit/f4e3f13e8c0fbf37405858e5f38ca1fac13d5d57) to complete the upgrade to OpenDaylight Helium. The CloudRouter project now provides a distribution of OpenDaylight Helium running on OSv. For more information, see the [CloudRouter wiki](http://wiki.cloudrouter.org/index.php/Running_CloudRouter_OSv_images).
