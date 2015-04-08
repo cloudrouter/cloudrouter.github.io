@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Title: Making OpenDaylight Helium successfully run on OSv"
+title: Making OpenDaylight Helium successfully run on OSv
 date: 2015-04-09
 categories: cloudrouter
 author: dfj
@@ -73,7 +73,7 @@ The base element specifies that this image should be built on top of the existin
 
 After modifying the Makefile and Capstanfile to upgrade to OpenDaylight Helium, the capstan build process worked fine, but the image would throw a fatal exception at runtime:
 
-```sh
+```
 $ capstan run opendaylight
 Created instance: opendaylight
 OSv v0.16
@@ -107,11 +107,13 @@ Note that the "chdir: Quota exceeded" error was transient and unpredictable, but
 **The solution: java.ext.dirs**
 
 After much head scratching, we realized that io.osv.OsvSystemClassLoader is loaded as a Java extension. This means it is not resolved via the classpath, but via the path specified by the java.ext.dirs property. The initial OpenDaylight Helium Capstanfile we wrote contained:
+
 ```
 -Djava.ext.dirs=/opendaylight/lib/ext
 ```
 
 By specifying a new java.ext.dirs value, the default value of /usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext was being overriden. The fix was to add these paths to the value specified in the Capstanfile:
+
 ```
 -Djava.ext.dirs=/usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext:/opendaylight/lib/ext
 ```
