@@ -57,10 +57,10 @@ the KVM hypervisor with virt-manager is recommended. To install the image using 
 
 At this point you have CloudRouter running, but cannot login. For enhanced security, the CloudRouter image ships without any default credentials. A default &#8220;cloudrouter&#8221; user is provided, but no password is set. To set a password, you must create a metadata ISO image.
 
-* Create a metadata ISO based on the instructions in <a href="https://www.technovelty.org//linux/running-cloud-images-locally.html">this blog post</a>. Alternatively, a pre-built metadata ISO is <a href="https://repo.cloudrouter.org/beta/images/cr-init.iso">available here</a>. This ISO sets the fedora user&#8217;s password to &#8220;CloudRouter&#8221;. **DO NOT** use this ISO in production, it is strictly for test and demonstration purposes.
+* Create a metadata ISO based on the instructions in <a href="https://www.technovelty.org//linux/running-cloud-images-locally.html">this blog post</a>. Alternatively, a pre-built metadata ISO is <a href="https://repo.cloudrouter.org/beta/images/cr-init.iso">available here</a>. This ISO sets the cloudrouter user&#8217;s password to &#8220;CloudRouter&#8221;. **DO NOT** use this ISO in production, it is strictly for test and demonstration purposes.
 * In virt-manager, attach the metadata ISO to the CloudRouter VM as a CDROM storage device.
 * Reboot your VM and login. Enjoy!
 
 **Next Steps**
 
-CloudRouter 1.0 beta is based on the <a href="https://getfedora.org/en/cloud/">Fedora 20 cloud image</a>, and includes a distribution of OpenDaylight Helium SR3. For information on installing and running OpenDaylight on CloudRouter, see the <a href="https://github.com/cloudrouter/cloudrouter.github.io/wiki/Running-OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
+CloudRouter 1.0 beta includes a distribution of OpenDaylight Helium SR3. For information on installing and running OpenDaylight on CloudRouter, see the <a href="https://github.com/cloudrouter/cloudrouter.github.io/wiki/Running-OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
