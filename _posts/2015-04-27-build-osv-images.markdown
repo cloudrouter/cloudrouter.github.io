@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Build OSv images the easy way, with the osv-builder Docker image"
+date: 2015-04-27
+categories: cloudrouter
+author: dfj
+---
+
 **By David Jorm and Don Marti**
 
 # Building OSv images using Docker
@@ -16,15 +24,15 @@ The main problem with this approach is that it requires a system to be appropria
 
 The [osv-builder docker image](https://registry.hub.docker.com/u/cloudrouter/osv-builder/) provides a complete build and development environment for OSv, including OSv application images and appliances. It has been developed by [Arun Babu Neelicattu](https://github.com/abn/) from [IIX](http://iix.net). To download the image, run:
 
-```sh
+~~~~~~
 docker pull cloudrouter/osv-builder
-```
+~~~~~~
 
 ## Capstan
 
 The image comes with Capstan pre-installed. Note that to use Capstan, you'll have to run the container with the --privileged option, as it requires the KVM kernel module. For example, to build and run the iperf application:
 
-```
+~~~~~~
 $ sudo docker run -it \
   --privileged \
   cloudrouter/osv-builder
@@ -44,38 +52,39 @@ eth0: 192.168.122.15
 Server listening on TCP port 5001
 TCP window size: 64.0 KByte (default)
 ------------------------------------------------------------
-```
+~~~~~~
 ## Launching an interactive session
 
-```sh
+~~~~~~
 HOST_BUILD_DIR=$(pwd)/build
 docker run -it \
   --volume ${HOST_BUILD_DIR}:/osv/builder \
   cloudrouter/osv-builder
-```
-
+~~~~~~
 
 This will place you into the OSv source clone.  You’ll see the prompt:
-```sh
+
+~~~~~~
 bash-4.3# 
-```
+~~~~~~
+
 Now, you can work with it as you normally would when working on OSv source.  You can build apps, edit build scripts, and so on. For example, you can run the following commands, once the above `docker run` commands has been executed, to build and run a tomcat appliance.
 
-```sh
+~~~~~~
 ./scripts/build image=tomcat,httpserver
 ./scripts/run -V
-```
+~~~~~~
 
 ## The `osv` Command
 
 **Note** that the commands you run can be prefixed with `osv`, the source for which is available at `assets/osv`. For example you can build by:
 
-```sh
+~~~~~~
 docker run \
   --volume ${HOST_BUILD_DIR}:/osv/build \
   osv-builder \
   osv build image=opendaylight
-```
+~~~~~~
 
 Note that the _osv script_, by default provides the following convenience wrappers:
 
@@ -90,39 +99,36 @@ If any other command is used, it is simply passed on as `scripts/$CMD "$@"` wher
 
 You could also run commands as:
 
-```sh
+~~~~~~
 docker run \
   --volume ${HOST_BUILD_DIR}:/osv/build \
   osv-builder \
   ./scripts/build image=opendaylight
-```
+~~~~~~
 
 ## Building appliance images
 
 If using the pre-built version from docker hub, use `cloudrouter/osv-builder` instead of `osv-builder`.
 
-```sh
+~~~~~~
 HOST_BUILD_DIR=$(pwd)/build
 docker run \
   --volume ${HOST_BUILD_DIR}:/osv/build \
   osv-builder \
   osv appliance zookeeper apache-zookeeper,cloud-init "Apache Zookeeper on OSv"
-```
+~~~~~~
 
 If everything goes well, the images should be available in `${HOST_BUILD_DIR}`. This will contain appliance images for [QEMU/KVM](http://wiki.qemu.org/KVM), [Oracle VirtualBox](https://www.virtualbox.org/), [Google Compute Engine](https://cloud.google.com/compute/) and [VMWare](https://www.vmware.com/) Virtual Machine Disk.
 
 Note that we explicitly disable the build of [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview) images since `ovftool` is not available.
 
-
 ## Building locally
-
 
 As an alternative, you can build locally with a `docker build` command, using the [Dockerfile](https://registry.hub.docker.com/u/cloudrouter/osv-builder/dockerfile/) for osv-builder.
 
-```sh
+~~~~~~
 docker build -t osv-builder .
-```
-
+~~~~~~
 
 Then you can use a plain `osv-builder` image name instead of `cloudrouter/osv-builder`.
 
@@ -138,6 +144,7 @@ For more information regarding OSv Appliances and pre-built ones, check the [OSv
 | /osv/images | The OSv image build configurations. |
 
 ## Sending OSv patches
+
 If you’re following the [Formatting and sending patches](https://github.com/cloudius-systems/osv/wiki/Formatting-and-sending-patches) guide on the OSv web site, just copy your patches into the `builder` directory in the container, and they’ll show up under your `$HOST_BUILD_DIR`, ready to be sent to the mailing list.
 
 ## Conclusion
