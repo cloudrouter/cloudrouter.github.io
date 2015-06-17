@@ -11,3 +11,5 @@ I am very excited to welcome the [Australian National University (ANU) TechLaunc
 ANU students will focus on the development of a configuration interface for the [Routing Policy Specification Language (RPSL)] (ftp://ftp.ripe.net/rfc/rfc2622.txt).  The RPSL parser will be based on RIPE NCC code, and will be available as open source software.  IIX, one of the founding members of the CloudRouter Project, is sponsoring a portion of the academic research at ANU.  IIX is also increasing the number of engineers assigned to work on this open source community project.
 
 I wish to extend a warm welcome to ANU, which joins a long list of technology leaders involved in the CloudRouter Project, including [CloudBees] (https://www.cloudbees.com), [Cloudius Systems] (http://www.cloudius-systems.com), [IIX] (http://www.iix.net), [NGINX] (http://www.nginx.com), and [OpenDaylight] (http://opendaylight.org).
+
+The official press release can be found at [release](https://cloudrouter.org/releases/cloudrouter-anu-techlauncher-partnership.html)
