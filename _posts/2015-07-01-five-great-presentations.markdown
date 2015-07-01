@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "5 Great Presentation from NANOG 64"
+title: "5 Great Presentations from NANOG 64"
 date: 2015-07-01
 categories: cloudrouter
 author: jkt
