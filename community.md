@@ -34,7 +34,7 @@ The <devel@lists.cloudrouter.org> mailing list is a forum for discussing develop
 
 To ask a question about CloudRouter, go to: <https://cloudrouter.atlassian.net/wiki/questions>
 
-For more real-time discussion, join us on IRC: irc.freenode.net #cloudrouter
+For more real-time discussion, see my <a href="{{ site.baseurl }}/cloudrouter/2015/07/06/gitter-announce.html">blog post</a>, and join our Gitter channel, <https://gitter.im/cloudrouter>.
 
 **Code of Conduct**
 
