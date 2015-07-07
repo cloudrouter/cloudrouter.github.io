@@ -95,7 +95,7 @@ If you're only testing CloudRouter, you can use the pre-generated metadata ISO w
 
 Alternatively, you can use the following script to generate the ISO: 
 
-[Metadata ISO generator script](link)
+[Metadata ISO generator script](https://cloudrouter.atlassian.net/wiki/download/attachments/2654219/make-cloudrouter-init-iso.sh)
 
 ---
 
