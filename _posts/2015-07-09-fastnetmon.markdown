@@ -21,6 +21,7 @@ A typical deployment of FastNetMon is shown in the network map below.
 ![Network Map]({{ site.baseurl }}/wp-content/uploads/2015/07/image01.png)
 
 Features include:
+
 * Process incoming and outgoing traffic
 * Trigger block script if certain IP loads network with a large amount of packets/bytes/flows per second
 * [Announce blocked IPs](https://github.com/FastVPSEestiOu/fastnetmon/blob/master/docs/EXABGP_INTEGRATION.md) to BGP router with [ExaBGP](https://github.com/Exa-Networks/exabgp)
