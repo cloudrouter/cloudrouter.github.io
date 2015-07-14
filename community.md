@@ -36,6 +36,8 @@ To ask a question about CloudRouter, go to: <https://cloudrouter.atlassian.net/w
 
 For more real-time discussion, see my <a href="{{ site.baseurl }}/cloudrouter/2015/07/06/gitter-announce.html">blog post</a>, and join our Gitter channel, <https://gitter.im/cloudrouter>.
 
+Curious about the CloudRouter release plans?  See the <a href="https://https://cloudrouter.atlassian.net/wiki/display/CPD/CloudRouter+Roadmap">Release Management Confluence Space</a> for all the details.
+
 **Code of Conduct**
 
 The CloudRouter Project is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, or religion.  We do not tolerate harassment of participants in any form.
