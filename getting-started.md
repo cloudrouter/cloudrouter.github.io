@@ -143,25 +143,17 @@ Once you have an uncompressed CloudRouter image, you can use it to create your v
 * For **Version** select Fedora 22. 
 * Set your memory and vCPU to a minimum of 2048 MiB and 2 vCPUs. 
 * Give your virtual machine a name, such as "CloudRouter-test". 
-* Click **Finish**. CloudRouter will automatically begin installing on the virtual machine. 
-* If the installation was a success, you should have a running virtual machine with a command line interface that looks like this: 
+* Select **Customize configuration before install** option
+* Click **Finish**, and you will have an option to attach the Metadata ISO
+* Select **Add Hardware** in the bottom corner
+* Select the first option, **Storage**
+* Select the second option, **Select managed or other existing storage**
+* Enter the metadata ISO's filepath or select the **Browse** button to find it
+* Select the bus type to **IDE**
+* Set the device type to *CDROM device**
+* Select **Finish**.  Your ISO will now appear in the list as **IDE CDROM 1**
+* Select **Begin Installation** on the top left to power on the CloudRouter VM
 
-[image]
-
-### Attaching the Metadata ISO 
-
-Your CloudRouter virtual machine should be installed but powered down. To attach the metadata ISO: 
-
-* Open the virtual machine by selecting **Open**.
-* Select the blue **i** button for more virtual machine details. 
-* Select **Add Hardware** in the bottom corner. 
-* Select the first option, **Storage**. 
-* Select the second option, **Select managed or other existing storage**. 
-* Enter the metadata ISO's filepath or select the **Browse** button to find it. 
-* Set the bus type to **IDE**. 
-* Set the device type to **CDROM device**. 
-* Select finish. Your ISO will now appear in the list as IDE CDROM 1. 
-* You can now log in as user **cloudrouter**, or the user you defined using the shell script. 
 
 ### Install using the Command Line
 
