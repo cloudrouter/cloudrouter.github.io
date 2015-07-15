@@ -64,9 +64,9 @@ Choose which version of CloudRouter you need and then follow the installation in
 
 The minimal image is a Fedora Remix with the CloudRouter repository pre-configured. Use this image if you don't want all of the pre-installed packages provided by the full install. 
 
-* [x86_64 Minimal Image](https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150401.x86_64.raw.xz) 
-* [Image Checksum](https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150401.checksum.txt) 
-* [Manifest](https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Minimal-20150401.manifest.txt) 
+* [x86_64 Minimal Image](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.raw.xz) 
+* [Image Checksum](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.checksum.txt) 
+* [Manifest](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.manifest) 
 
 ### Full
 
@@ -78,12 +78,14 @@ The full image is also a Fedora Remix with the CloudRouter repository pre-config
 * [Capstan](https://github.com/cloudius-systems/capstan/blob/master/README.md)
 * [Mininet](http://mininet.org/)
 * [ONOS](http://onosproject.org/)
+* [FastNetMon](https://github.com/FastVPSEestiOu/fastnetmon)
+* [ExaBGP](https://github.com/Exa-Networks/exabgp)
 
 Use this image if you're unsure of which packages you might need for your setup. This is also suitable for live USB and CD images. 
 
-* [x86_64 Image](https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150401.x86_64.raw.xz) 
-* [Image Checksum](https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150401.checksum.txt) 
-* [Manifest](https://repo.cloudrouter.org/beta/images/CloudRouter-Beta-Full-20150401.manifest.txt) 
+* [x86_64 Image](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.raw.xz)
+* [Image Checksum](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.checksum.txt)
+* [Manifest](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.manifest)
 
 ### Metadata ISO image 
 
@@ -91,7 +93,7 @@ For enhanced security, CloudRouter images ship without any default credentials. 
 
 If you're only testing CloudRouter, you can use the pre-generated metadata ISO we've provided. 
 
-[Metadata ISO](https://repo.cloudrouter.org/beta/images/cr-init.iso)
+[Metadata ISO](https://repo.cloudrouter.org/fedora/2/images/cloudrouter-init.iso)
 
 Alternatively, you can use the following script to generate the ISO: 
 
