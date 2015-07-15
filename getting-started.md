@@ -74,7 +74,7 @@ The full image is also a Fedora Remix with the CloudRouter repository pre-config
 
 * [BIRD](http://bird.network.cz/)
 * [Quagga](http://www.nongnu.org/quagga/)
-* [OpenDaylight Helium](http://www.opendaylight.org/) 
+* [OpenDaylight Lithium](http://www.opendaylight.org/) 
 * [Capstan](https://github.com/cloudius-systems/capstan/blob/master/README.md)
 * [Mininet](http://mininet.org/)
 * [ONOS](http://onosproject.org/)
@@ -126,11 +126,12 @@ First, you need to uncompress your downloaded image and verify the checksum.
 
 * Uncompress the CloudRouter image by running this command in the directory the image is located in:
 
-`$ unxz CloudRouter-Beta-Full-20150401.x86_64.raw.xz`
+`$ unxz CloudRouter-2.0-BETA-fedora-full.x86_64.raw.xz`
 
 * Verify that the SHA-512 checksum is correct by running this command in the shell:
 
-`$ sha512sum CloudRouter-Beta-Full-20150401.x86_64.raw.xz 20fb13191b3fa43a60e96321a80d4e94c7a4c66f06ff59cc336e7dea193ff28b4a18b3cd15cf6d1d0e4e83c0ba4545a3d395f8bc337f9ca1167769fac24edd7a  CloudRouter-Beta-Full-20150401.x86_64.raw.xz`
+`$ sha512sum CloudRouter-2.0-BETA-fedora-full.raw.xz
+8945ab9d3420672e8e16567c548d71141e8bcab27771f1f64031b3f668b8c311c4a5a5771c96faa780267d50b5272d1e07cd61232db3f97a92d7c4c1be7a678c  CloudRouter-2.0-BETA-fedora-full.raw.xz`
 
 Once you have an uncompressed CloudRouter image, you can use it to create your virtual machine. 
 
@@ -166,7 +167,7 @@ Your CloudRouter virtual machine should be installed but powered down. To attach
 
 You can install and configure a CloudRouter virtual machine using the virt-install command. Here is an example of the necessary flags and arguments to use: 
 
-`sudo virt-install --accelerate --hvm --os-type linux --os-variant fedora20 --name CloudRouter-Beta-Full-20150401 --vcpus 2 --ram 2048 --import --disk bus=virtio,path=/var/lib/libvirt/images/CloudRouter-Beta-Full-20150401.x86_64.raw --disk device=cdrom,bus=ide,path=/var/lib/libvirt/images/cloudrouter-init.iso --network bridge=virbr0,model=virtio --noautoconsole`
+`sudo virt-install --accelerate --hvm --os-type linux --os-variant fedora20 --name CloudRouter-2.0-BETA-fedora-full --vcpus 2 --ram 2048 --import --disk bus=virtio,path=/var/lib/libvirt/images/CloudRouter-2.0-BETA-fedora-full.raw --disk device=cdrom,bus=ide,path=/var/lib/libvirt/images/cloudrouter-init.iso --network bridge=virbr0,model=virtio --noautoconsole`
 
 ---
 
