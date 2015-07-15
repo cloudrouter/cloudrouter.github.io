@@ -31,7 +31,7 @@ This guide is for people interested in testing the capabilities of CloudRouter a
 
 **Software-Defined Networking** 
 
-Software-Defined Networking (SDN)uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
+Software-Defined Networking (SDN) uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
 
 
 **Linux**
@@ -159,7 +159,7 @@ Once you have an uncompressed CloudRouter image, you can use it to create your v
 
 You can install and configure a CloudRouter virtual machine using the virt-install command. Here is an example of the necessary flags and arguments to use: 
 
-`sudo virt-install --accelerate --hvm --os-type linux --os-variant fedora20 --name CloudRouter-2.0-BETA-fedora-full --vcpus 2 --ram 2048 --import --disk bus=virtio,path=/var/lib/libvirt/images/CloudRouter-2.0-BETA-fedora-full.raw --disk device=cdrom,bus=ide,path=/var/lib/libvirt/images/cloudrouter-init.iso --network bridge=virbr0,model=virtio --noautoconsole`
+`sudo virt-install --accelerate --hvm --os-type linux --os-variant fedora22 --name CloudRouter-2.0-BETA-fedora-full --vcpus 2 --ram 2048 --import --disk bus=virtio,path=/var/lib/libvirt/images/CloudRouter-2.0-BETA-fedora-full.raw --disk device=cdrom,bus=ide,path=/var/lib/libvirt/images/cloudrouter-init.iso --network bridge=virbr0,model=virtio --noautoconsole`
 
 ---
 
