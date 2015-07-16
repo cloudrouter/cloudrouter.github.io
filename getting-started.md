@@ -31,7 +31,7 @@ This guide is for people interested in testing the capabilities of CloudRouter a
 
 **Software-Defined Networking** 
 
-Software-Defined Networking (SDN) uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
+Software-Defined Networking (SDN)uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
 
 
 **Linux**
@@ -78,8 +78,6 @@ The full image is also a Fedora Remix with the CloudRouter repository pre-config
 * [Capstan](https://github.com/cloudius-systems/capstan/blob/master/README.md)
 * [Mininet](http://mininet.org/)
 * [ONOS](http://onosproject.org/)
-* [FastNetMon](https://github.com/FastVPSEestiOu/fastnetmon)
-* [ExaBGP](https://github.com/Exa-Networks/exabgp)
 
 Use this image if you're unsure of which packages you might need for your setup. This is also suitable for live USB and CD images. 
 
@@ -126,12 +124,11 @@ First, you need to uncompress your downloaded image and verify the checksum.
 
 * Uncompress the CloudRouter image by running this command in the directory the image is located in:
 
-`$ unxz CloudRouter-2.0-BETA-fedora-full.x86_64.raw.xz`
+`$ unxz CloudRouter-2.0-BETA-fedora-full.x86_64.raw.xz
 
 * Verify that the SHA-512 checksum is correct by running this command in the shell:
 
-`$ sha512sum CloudRouter-2.0-BETA-fedora-full.raw.xz
-8945ab9d3420672e8e16567c548d71141e8bcab27771f1f64031b3f668b8c311c4a5a5771c96faa780267d50b5272d1e07cd61232db3f97a92d7c4c1be7a678c  CloudRouter-2.0-BETA-fedora-full.raw.xz`
+`$ sha512sum CloudRouter-2.0-BETA-fedora-full.raw.xz 8945ab9d3420672e8e16567c548d71141e8bcab27771f1f64031b3f668b8c311c4a5a5771c96faa780267d50b5272d1e07cd61232db3f97a92d7c4c1be7a678c CloudRouter-2.0-BETA-fedora-full.raw.xz`
 
 Once you have an uncompressed CloudRouter image, you can use it to create your virtual machine. 
 
@@ -143,17 +140,24 @@ Once you have an uncompressed CloudRouter image, you can use it to create your v
 * For **Version** select Fedora 22. 
 * Set your memory and vCPU to a minimum of 2048 MiB and 2 vCPUs. 
 * Give your virtual machine a name, such as "CloudRouter-test". 
-* Select **Customize configuration before install** option
-* Click **Finish**, and you will have an option to attach the Metadata ISO
-* Select **Add Hardware** in the bottom corner
-* Select the first option, **Storage**
-* Select the second option, **Select managed or other existing storage**
-* Enter the metadata ISO's filepath or select the **Browse** button to find it
-* Select the bus type to **IDE**
-* Set the device type to *CDROM device**
-* Select **Finish**.  Your ISO will now appear in the list as **IDE CDROM 1**
-* Select **Begin Installation** on the top left to power on the CloudRouter VM
+* Click **Finish**. CloudRouter will automatically begin installing on the virtual machine. 
+* If the installation was a success, you should have a running virtual machine with a command line interface. 
+* Once the installation is successful, power down the machine so you can attach the metadata ISO. 
 
+### Attaching the Metadata ISO 
+
+Your CloudRouter virtual machine should be installed but powered down. To attach the metadata ISO: 
+
+* Open the virtual machine by selecting **Open**.
+* Select the blue **i** button for more virtual machine details. 
+* Select **Add Hardware** in the bottom corner. 
+* Select the first option, **Storage**. 
+* Select the second option, **Select managed or other existing storage**. 
+* Enter the metadata ISO's filepath or select the **Browse** button to find it. 
+* Set the bus type to **IDE**. 
+* Set the device type to **CDROM device**. 
+* Select finish. Your ISO will now appear in the list as IDE CDROM 1. 
+* You can now log in as user **cloudrouter**, or the user you defined using the shell script. 
 
 ### Install using the Command Line
 
@@ -194,7 +198,7 @@ Run yum update to make sure you have the latest versions of all the included pac
 
 ### Running OpenDaylight
 
-CloudRouter 2.0 beta includes a distribution of OpenDaylight Lithium. For information on installing and running OpenDaylight on CloudRouter, see the <a href="https://github.com/cloudrouter/cloudrouter.github.io/wiki/Running-OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
+CloudRouter includes a distribution of OpenDaylight Lithium. For information on installing and running OpenDaylight on CloudRouter, see the <a href="https://github.com/cloudrouter/cloudrouter.github.io/wiki/Running-OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
 
 ### Bridging Public Clouds with CloudRouter
 
