@@ -27,13 +27,13 @@ In addition to the new features, this release has also improved several existing
 
 CloudRouter 2.0 beta incorporates patches for several security vulnerabilities:
 
-[Moderate] CVE-2015-3414 CVE-2015-3416: OpenDaylight SQLite memory
+* [Moderate] CVE-2015-3414 CVE-2015-3416: OpenDaylight SQLite memory
 corruption leading to DoS and possible code execution
 
-[Moderate] CVE-2015-4000: OpenDaylight LOGJAM: TLS connections which
+* [Moderate] CVE-2015-4000: OpenDaylight LOGJAM: TLS connections which
 support export grade DHE key-exchange are vulnerable to MITM attacks
 
-[Low] CVE-2015-1857: OpenDaylight information disclosure
+* [Low] CVE-2015-1857: OpenDaylight information disclosure
 
 For more details, please see:
 
