@@ -76,11 +76,11 @@ These images are pre-formatted Hardware Virtual Machine Amazon Machine Images (H
 
 * [us-west-2 :: (*ami-01a5aa31*)](https://console.aws.amazon.com/ec2/v2/home?region=us-west-2#LaunchInstanceWizard:ami=ami-01a5aa31) 
 
-### OSV Images
+### OSv Images
 
-CloudRouter is working on developing OSV images. _Note: this image is for CloudRouter version 1.0._
+CloudRouter is working on developing OSv images. _Note: this image is for CloudRouter version 1.0._
 
-[CloudRouter OpenDaylight OSV image](https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-OSv-OpenDaylight-20150320.qemu.xz)
+[CloudRouter OpenDaylight OSv image](https://repo.cloudrouter.org/repo/beta/images/CloudRouter-Beta-OSv-OpenDaylight-20150320.qemu.xz)
 
 ### Metadata ISO image 
 
