@@ -60,7 +60,14 @@ Note: the listed requirements are the same as those for Fedora Cloud. While Clou
 
 ## Download
 
-Choose which version of CloudRouter you need and then follow the installation instructions. These images are in raw format and are compressed with **xz**.
+Choose which version of CloudRouter you need and then follow the installation instructions. These images are in raw format and are compressed with **xz**. 
+
+----
+
+Note: These are appropriate formats for creating virtual machines using **virt-manager**. For a full list of available formats, including containers, please visit our [download page](https://cloudrouter.org/download/).
+
+---- 
+
 
 ### Minimal 
 
