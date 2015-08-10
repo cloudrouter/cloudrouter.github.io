@@ -17,7 +17,6 @@ The minimal image is a Fedora Remix with the CloudRouter repository pre-configur
 
 * [x86_64 Minimal Image (raw)](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.raw.xz)
 * [x86_64 Minimal Image (vmdk)](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.vmdk)
-
 * [Image Checksum](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.checksum.txt) 
 * [Manifest](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.manifest) 
 
@@ -36,7 +35,6 @@ Use this image if you're unsure of which packages you might need for your setup.
 
 * [x86_64 Image (raw)](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.raw.xz)
 * [x86_64 Image (vmdk)](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.vmdk)
-
 * [Image Checksum](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.checksum.txt)
 * [Manifest](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.manifest)
 
@@ -73,7 +71,6 @@ Use these images for removable media such as USB sticks or CDs/DVDs.
 These images are pre-formatted Hardware Virtual Machine Amazon Machine Images (HVM AMIs). 
 
 * [ap-southeast-2 :: (*ami-fdd392c7*)](https://console.aws.amazon.com/ec2/v2/home?region=ap-southeast-2#LaunchInstanceWizard:ami=ami-fdd392c7)
-
 * [us-west-2 :: (*ami-01a5aa31*)](https://console.aws.amazon.com/ec2/v2/home?region=us-west-2#LaunchInstanceWizard:ami=ami-01a5aa31) 
 
 ### OSv Images
