@@ -64,7 +64,7 @@ Choose which version of CloudRouter you need and then follow the installation in
 
 ----
 
-Note: These are the best formats for creating virtual machines using **virt-manager**. For a full list of available formats, including containers, please visit our [download page](https://cloudrouter.org/download/).
+Note: These are appropriate formats for creating virtual machines using **virt-manager**. For a full list of available formats, including containers, please visit our [download page](https://cloudrouter.org/download/).
 
 ---- 
 
