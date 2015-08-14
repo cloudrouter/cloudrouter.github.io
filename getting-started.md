@@ -33,7 +33,7 @@ This guide is for people interested in testing the capabilities of CloudRouter a
 
 **Software-Defined Networking** 
 
-Software-Defined Networking (SDN)uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
+Software-Defined Networking (SDN) uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
 
 
 **Linux**
