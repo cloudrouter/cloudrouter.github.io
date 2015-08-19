@@ -54,7 +54,7 @@ The instructions in this getting started guide assume that you have your chosen 
 
 ----
 
-Note: the listed requirements are the same as those for Fedora Cloud. While CloudRouter is designed to be lightweight, some tasks might require more allocated memory and vCPUs. If you experience performance issues please [let us know](mailto:users@lists.cloudrouter.org).
+Note: the listed requirements are the same as those for Fedora Cloud. While CloudRouter is designed to be lightweight, some tasks might require more allocated memory and vCPUs. If you experience performance issues please [let us know](mailto:cloudrouter-users@googlegroups.com).
 
 ---- 
 

@@ -28,9 +28,9 @@ To contribute to the CloudRouter project, just fork the repo and send pull reque
 
 **Community resources**
 
-The <users@lists.cloudrouter.org> mailing list is a forum for discussing usage of CloudRouter, including problems, feature requests and general discussion. To subscribe to the users list, go to: <http://lists.cloudrouter.org/mailman/listinfo/users/>
+The <cloudrouter-users@googlegroups.com> mailing list is a forum for discussing usage of CloudRouter, including problems, feature requests and general discussion. To subscribe to the users list, go to: <https://groups.google.com/forum/#!forum/cloudrouter-users>
 
-The <devel@lists.cloudrouter.org> mailing list is a forum for discussing development of CloudRouter and associated technologies. To subscribe to the devel list, go to: <http://lists.cloudrouter.org/mailman/listinfo/devel/>
+The <cloudrouter-devel@googlegroups.com> mailing list is a forum for discussing development of CloudRouter and associated technologies. To subscribe to the devel list, go to: <https://groups.google.com/forum/#!forum/cloudrouter-devel>
 
 To ask a question about CloudRouter, go to: <https://cloudrouter.atlassian.net/wiki/questions>
 
