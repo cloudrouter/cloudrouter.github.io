@@ -3,217 +3,120 @@ layout: blog_section
 title: Getting Started
 permalink: /getting-started/
 ---
+
 ## About CloudRouter
 
 CloudRouter is a software-based router designed to run on physical, virtual and cloud environments, supporting software-defined networking infrastructure. It includes the features of traditional hardware routers, as well as support for emerging technologies such as containers and software-defined interconnection. CloudRouter aims to facilitate migration to the cloud without giving up control over network routing and governance. 
 
-CloudRouter 2.0 Beta is now available! Read the release notes [here](https://cloudrouter.org/cloudrouter/releases/2015/07/16/cr2-beta-release-notes.html). 
+CloudRouter 2.0 is now available! Read the release notes [here](https://cloudrouter.org/cloudrouter/releases/2015/09/02/cr2-ga-release-notes.html). 
 
-CloudRouter is a [Fedora Remix](https://fedoraproject.org/wiki/Remix). 
-
-----
-
-Note: The CloudRouter Fedora Remix is not supported by the Fedora Project. Official Fedora software is available through the [Fedora Project website]( http://fedoraproject.org ).
+CloudRouter is built as a [Fedora Remix](https://fedoraproject.org/wiki/Remix) and a [CentOS variant](https://www.centos.org/variants/). 
 
 ----
 
-## Getting Started
-
-This guide is for people interested in testing the capabilities of CloudRouter and finding out more about Software-Defined Networking. This getting started guide will cover: 
-
-* Requirements and pre-requisites 
-* Downloading the CloudRouter image
-* Installing CloudRouter using virt-manager
-* Testing the installation
-* Some basic configuration tasks
-
-## Requirements and Pre-requisites
-
-### Concepts
-
-**Software-Defined Networking** 
-
-Software-Defined Networking (SDN) uses virtualization concepts to manage network services through abstraction of lower-level functionality. This is emerging technology and has the potential to change the way the Internet is connected. For a primer on SDN concepts, take a look at this [InfoWorld article from 2013](http://www.infoworld.com/article/2606200/networking/111753-Software-defined-networking-explained.html). 
-
-
-**Linux**
-
-You can install and run CloudRouter without a background in Linux, but understanding basic Linux commands and concepts will help with troubleshooting and configuration tasks. A very quick overview of UNIX-like environments, with some of the most commonly used commands, can be found [here](http://freeengineer.org/learnUNIXin10minutes.html).
-
-**Virtualization** 
-
-For the purposes of this getting started process, CloudRouter should be installed on a virtual machine, or using a container. This guide uses virt-manager, an open source virtualization platform project. Head to the [virt-manager project's website](http://virt-manager.org/) for more information. 
-
-The instructions in this getting started guide assume that you have your chosen virtualization platform up and running before beginning this process. 
-
-
-### Recommended System Requirements
-
-
-2048MB memory and 2 vCPUs are recommended to run CloudRouter in a virtual machine environment. 
+Note: The CloudRouter Project is not supported by the Fedora Project or the CentOS Project. Official Fedora software is available through the [Fedora Project website](http://fedoraproject.org), and CentOS is available through the [CentOS website](https://www.centos.org/).
 
 ----
 
-Note: the listed requirements are the same as those for Fedora Cloud. While CloudRouter is designed to be lightweight, some tasks might require more allocated memory and vCPUs. If you experience performance issues please [let us know](mailto:cloudrouter-users@googlegroups.com).
+## Download CloudRouter
+
+CloudRouter is available in the following formats for both Fedora-based and CentOS-based images: 
+
+* Live CD/DVD
+
+* Virtual images in both .raw and .vmdk formats
+
+* Amazon EC2 HVM AMIs 
+
+* Docker containers
+
+* OSv images
+
+* rkt compatible containers
+
+To download any of these images, please visit the CloudRouter Project's [download page](https://cloudrouter.atlassian.net/wiki/display/CPD/CloudRouter+Downloads). 
+
+## Introduction 
+
+This guide provides a set of instructions describing how to create a bootable CloudRouter image on a USB flash drive. For more comprehensive getting started instructions, please visit the [Getting Started Guide on the CloudRouter wiki](https://cloudrouter.atlassian.net/wiki/display/CPD/Getting+Started). You can use either a Fedora-based image or a CentOS-based image. These instructions use the Fedora image in examples. Ensure you have: 
+
+* A clean USB drive with at least 4GB of storage space
+* A CloudRouter [live image](https://cloudrouter.atlassian.net/wiki/display/CPD/CloudRouter+Downloads)
+* Either a computer that allows USB-booting, or a suitable virtual machine (for more information about virtual machines see the [Getting Started wiki](https://cloudrouter.atlassian.net/wiki/display/CPD/Getting+Started))
+
+### Creating a Bootable USB CloudRouter Image on Linux
+
+This method will destroy any existing data on your USB. Ensure you have a clean, empty USB drive before you begin. This method uses the **dd** utility, which does not allow for data persistence but is suitable for creating a test instance of CloudRouter. **dd** is available and should work similarly across most Linux-based distributions; please refer to your distribution's documentation if you have any trouble. 
+
+The basic command structure for **dd** looks like this: 
+
+ `sudo dd if=example.iso of=/dev/usbname`
+ 
+The `if=` argument provides the location of the live image, and the `of=` argument provides the destination, in this case, the USB device. 
+
+1. Plug in your USB drive then open your command line. 
+ 
+2. Note the filepath of your downloaded CloudRouter image:
+	
+	`~/Home/Downloads/CloudRouter-Live-2.0-BETA-fedora.iso`	
+	 
+3. Find out the allocated name of your USB device by running the **lsblk** command: 
+
+        [username@localhost ~]$ lsblk 
+        NAME                                          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+        sda                                             8:0    0 119.2G  0 disk  
+        ├─sda1                                          8:1    0   200M  0 part  /boot/efi
+        ├─sda2                                          8:2    0   500M  0 part  /boot
+        └─sda3                                          8:3    0 118.6G  0 part  
+          └─luks-6b665c1f-2604-45a7-6751-89b49efe192c 253:0    0 118.6G  0 crypt 
+            ├─fedora-swap                             253:1    0   7.8G  0 lvm   [SWAP]
+            ├─fedora-root                             253:2    0    50G  0 lvm   /
+            └─fedora-home                             253:3    0  60.8G  0 lvm   /home
+        sdb                                             8:16   1  14.9G  0 disk  
+ 
+   In this case, the device is called **sdb**. In the above example, the device is already _unmounted_. If your device is mounted, use the **umount** command to unmount it: 
+   
+   `umount /dev/sdb`
+
+4. Once you have the download location and the device location, and your device is unmounted, you can run the **dd** command: 
+
+   `sudo dd if=~/Home/Downloads/CloudRouter-Live-2.0-BETA-fedora.iso of=/dev/sdb` 
+   
+   The **dd** utility works silently; do not interrupt the process. It might take some time to run, depending on the available RAM and the image size. Once it's completed, you should see an output like this: 
+   
+        4+1 records in
+        4+1 records out
+        2547646464 bytes (2.5 GB) copied, 252.723 s, 10.1 MB/s
+        
+5. Your USB image is now ready to use. The live CloudRouter image comes pre-configured with the username **cloudrouter** with the password **CloudRouter**. 
+
+----
+
+Note: These credentials are provided for testing purposes only and **should not** be used in production. 
+
+----
+
+### Creating a Bootable USB CloudRouter Image on Windows 
+
+This procedure is based on UNetbootin, an open source tool recommended by multiple Linux distributions and suitable for most Windows versions. Download UNetbootin [here](http://unetbootin.github.io/).
+
+Once UNetbootin is downloaded and running: 
+
+1. Select the **Diskimage** option. 
+
+2. Leave **ISO** selected and specify the downloaded image filepath by typing it in or browsing. 
+
+3. Select **USB** as the target device and check that the tool has identified the correct location. 
+
+4. Click **OK** and wait for the process to finish. 
+
+5. Your USB image is now ready to use. The live CloudRouter image comes pre-configured with the username **cloudrouter** with the password **CloudRouter**. 
+
+----
+
+Note: These credentials are provided for testing purposes only and **should not** be used in production. 
 
 ---- 
-
-## Download
-
-Choose which version of CloudRouter you need and then follow the installation instructions. These images are in raw format and are compressed with **xz**. 
-
-----
-
-Note: These are appropriate formats for creating virtual machines using **virt-manager**. For a full list of available formats, including containers, please visit our [download page](https://cloudrouter.org/download/).
-
----- 
-
-
-### Minimal 
-
-The minimal image is a Fedora Remix with the CloudRouter repository pre-configured. Use this image if you don't want all of the pre-installed packages provided by the full install. 
-
-* [x86_64 Minimal Image](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.raw.xz) 
-* [Image Checksum](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.checksum.txt) 
-* [Manifest](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-minimal.manifest) 
-
-### Full
-
-The full image is also a Fedora Remix with the CloudRouter repository pre-configured. In addition, it includes the following packages:
-
-* [BIRD](http://bird.network.cz/)
-* [Quagga](http://www.nongnu.org/quagga/)
-* [OpenDaylight Lithium](http://www.opendaylight.org/) 
-* [Capstan](https://github.com/cloudius-systems/capstan/blob/master/README.md)
-* [Mininet](http://mininet.org/)
-* [ONOS](http://onosproject.org/)
-
-Use this image if you're unsure of which packages you might need for your setup. This is also suitable for live USB and CD images. 
-
-* [x86_64 Image](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.raw.xz)
-* [Image Checksum](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.checksum.txt)
-* [Manifest](https://repo.cloudrouter.org/fedora/2/images/CloudRouter-2.0-BETA-fedora-full.manifest)
-
-### Metadata ISO image 
-
-For enhanced security, CloudRouter images ship without any default credentials. A default user called **cloudrouter** is provided, but no password is set. To generate a user profile and set a password, you need to create a metadata ISO. An ISO is a file that emulates a CD. Download or generate the ISO then attach it to the CloudRouter virtual machine (much like you would place a physical CD into a CD disk drive on your computer). 
-
-If you're only testing CloudRouter, you can use the pre-generated metadata ISO we've provided. 
-
-[Metadata ISO](https://repo.cloudrouter.org/fedora/2/images/cloudrouter-init.iso)
-
-Alternatively, you can use the following script to generate the ISO: 
-
-[Metadata ISO generator script](https://github.com/cloudrouter/cloudrouter/blob/master/contrib/make-cloud-init-iso.sh)
-
----
-
-Important: The metadata image we provide is for testing only and **should not** be used in production. 
-
----
-
-## Installation 
-
-CloudRouter can be run on a variety of cloud hosts. This getting started guide provides explicit instructions for installing with virt-manager. If you're using a different virtualization platform, the installation and configuration basics are the same: 
-
-* Download the image
-* Create a new virtual machine using the CloudRouter image
-* Add the metadata ISO to create a user 
-* Begin networking and configuration tasks 
-
-----
-
-Note: All the code examples in the following installation procedures use the *full* package name. If you have downloaded the *minimal* image, remember to use the correct package name. 
-
-----
-
-### Install using the GUI
-
-First, you need to uncompress your downloaded image and verify the checksum. 
-
-* Uncompress the CloudRouter image by running this command in the directory the image is located in:
-
-`$ unxz CloudRouter-2.0-BETA-fedora-full.x86_64.raw.xz
-
-* Verify that the SHA-512 checksum is correct by running this command in the shell:
-
-`$ sha512sum CloudRouter-2.0-BETA-fedora-full.raw.xz 8945ab9d3420672e8e16567c548d71141e8bcab27771f1f64031b3f668b8c311c4a5a5771c96faa780267d50b5272d1e07cd61232db3f97a92d7c4c1be7a678c CloudRouter-2.0-BETA-fedora-full.raw.xz`
-
-Once you have an uncompressed CloudRouter image, you can use it to create your virtual machine. 
-
-* Open the virt-manager tool.
-* Select **File**, then **New Virtual Machine**.
-* Select **Import existing disk image** from the available options. 
-* Either provide the filepath or select **Browse** to choose it manually. If you browse for the file, select **Browse Local** in the bottom left corner of the screen. 
-* For **OS type** select Linux. 
-* For **Version** select Fedora 22. 
-* Set your memory and vCPU to a minimum of 2048 MiB and 2 vCPUs. 
-* Give your virtual machine a name, such as "CloudRouter-test". 
-* Click **Finish**. CloudRouter will automatically begin installing on the virtual machine. 
-* If the installation was a success, you should have a running virtual machine with a command line interface. 
-* Once the installation is successful, power down the machine so you can attach the metadata ISO. 
-
-### Attaching the Metadata ISO 
-
-Your CloudRouter virtual machine should be installed but powered down. To attach the metadata ISO: 
-
-* Open the virtual machine by selecting **Open**.
-* Select the blue **i** button for more virtual machine details. 
-* Select **Add Hardware** in the bottom corner. 
-* Select the first option, **Storage**. 
-* Select the second option, **Select managed or other existing storage**. 
-* Enter the metadata ISO's filepath or select the **Browse** button to find it. 
-* Set the bus type to **IDE**. 
-* Set the device type to **CDROM device**. 
-* Select finish. Your ISO will now appear in the list as IDE CDROM 1. 
-* You can now log in as user **cloudrouter**, or the user you defined using the shell script. 
-
-### Install using the Command Line
-
-You can install and configure a CloudRouter virtual machine using the virt-install command. Here is an example of the necessary flags and arguments to use: 
-
-`sudo virt-install --accelerate --hvm --os-type linux --os-variant fedora22 --name CloudRouter-2.0-BETA-fedora-full --vcpus 2 --ram 2048 --import --disk bus=virtio,path=/var/lib/libvirt/images/CloudRouter-2.0-BETA-fedora-full.raw --disk device=cdrom,bus=ide,path=/var/lib/libvirt/images/cloudrouter-init.iso --network bridge=virbr0,model=virtio --noautoconsole`
-
----
-
-Note: Don't forget to have your metadata ISO image ready to go before running this command. The `--disk-device` argument is where you should provide the filepath to the ISO. 
-
----
-
-You should now have a CloudRouter virtual machine installed and configured with a username and password. 
-
-## Testing CloudRouter
-
-To test your CloudRouter instance is working correctly, do one of the following: 
-
-**For a minimal install** 
-
-Attempt to install a package using **yum**. Try **BIRD**: 
-
-`sudo yum install bird`
-
-As CloudRouter comes with pre-configured repositories, the download will begin as soon as you confirm with **y**. 
-
-**For a full install**
-
-Run yum update to make sure you have the latest versions of all the included packages, or just pick a specific application to update: 
-
-`sudo yum update`
-
-`sudo yum update bird`
-
-
-## Next Steps
-
-### Running OpenDaylight
-
-CloudRouter includes a distribution of OpenDaylight Lithium. For information on installing and running OpenDaylight on CloudRouter, see the <a href="https://wiki.opendaylight.org/view/Installing_OpenDaylight">Running OpenDaylight</a> wiki page. For more details on using OpenDaylight, see the upstream <a href="http://www.opendaylight.org/resources/getting-started-guide">OpenDaylight Getting Started Guide</a>.
-
-### Bridging Public Clouds with CloudRouter
-
-One of the main benefits of CloudRouter is its ability to bridge public cloud networks such as AWS EC2 and Google Cloud. You can read instructions on how to get your bridge set up in this [article on our wiki](https://cloudrouter.atlassian.net/wiki/display/CPD/Bridging+Public+Clouds+with+CloudRouter).
-
-
 
 ## Resources
 
