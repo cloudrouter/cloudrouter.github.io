@@ -12,7 +12,7 @@ powerful, easy to use router designed for the cloud.
 Compute resources are rapidly migrating from physical infrastructure to a combination of
  physical, virtual and cloud environments. A similar transition is emerging in the networking
  space, with network control logic shifting from proprietary hardware-based platforms to open
- source software-based platforms. CloudRouter is a software-based router designed to run on
+ source software-based platforms. CloudRouter is a software-based router distribution designed to run on
  physical, virtual and cloud environments, supporting software-defined networking
  infrastructure. It includes the features of traditional hardware routers, as well as support
  for emerging technologies such as containers and software-defined interconnection.
@@ -21,11 +21,12 @@ Compute resources are rapidly migrating from physical infrastructure to a combin
 
 **Key features**
 
-* Full-stack SDN implementation including OpenDaylight
+* Full-stack SDN implementation including OpenDaylight and ONOS
 * Standards-based interfaces
 * Built on the rock-solid foundation of Linux
 * Monitoring and availability
 * Support for containers and cloud images
+* Security monitoring tools including FastNetMon for DDoS and DOS detection and analysis, and BGPstream for analysis
 
 **Architecture &amp; design goals**
 
