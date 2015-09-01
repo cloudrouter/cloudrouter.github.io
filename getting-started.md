@@ -58,7 +58,7 @@ The `if=` argument provides the location of the live image, and the `of=` argume
  
 2. Note the filepath of your downloaded CloudRouter image:
 	
-	`~/Home/Downloads/CloudRouter-Live-2.0-BETA-fedora.iso`	
+	`~/Home/Downloads/CloudRouter-Live-2.0-fedora.iso`	
 	 
 3. Find out the allocated name of your USB device by running the **lsblk** command: 
 
@@ -80,7 +80,7 @@ The `if=` argument provides the location of the live image, and the `of=` argume
 
 4. Once you have the download location and the device location, and your device is unmounted, you can run the **dd** command: 
 
-   `sudo dd if=~/Home/Downloads/CloudRouter-Live-2.0-BETA-fedora.iso of=/dev/sdb` 
+   `sudo dd if=~/Home/Downloads/CloudRouter-Live-2.0-fedora.iso of=/dev/sdb` 
    
    The **dd** utility works silently; do not interrupt the process. It might take some time to run, depending on the available RAM and the image size. Once it's completed, you should see an output like this: 
    
