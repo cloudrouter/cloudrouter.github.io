@@ -23,5 +23,5 @@ While I find 224 new packages exciting, it is another facet of this release whic
 * Routing: ExaBGP, BIRD, Quagga
 * Base functionality: IPSec, VPN, SSL, L2TP, failover and synchronization
 
-CloudRouter 2.0 is available for download and use today!
+CloudRouter 2.0 is available for [download](https://cloudrouter.atlassian.net/wiki/display/CPD/CloudRouter+Downloads) and use today!
 
