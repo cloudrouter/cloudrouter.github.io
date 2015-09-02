@@ -25,4 +25,3 @@ While I find 224 new packages exciting, it is another facet of this release whic
 
 CloudRouter 2.0 is available for download and use today!
 
-- jkt
