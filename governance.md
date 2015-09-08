@@ -21,6 +21,7 @@ The PSC is currently comprised of the following members:
 
 * Jay Turner <jkt@iix.net>
 * David Jorm <djorm@iix.net>
+* Paul Gampe <pgampe@iix.net>
 
 New members of the PSC are currently being sought. If you are interested in applying, please email <cloudrouter-psc@googlegroups.com>.
 
@@ -38,5 +39,6 @@ The TSC is currently comprised of the following members:
 
 * Chandrasekar Kannan <ckannan@iix.net>
 * Arun Neelicattu <abn@iix.net>
+* Jay Turner <jkt@iix.net>
 
 New members of the TSC are currently being sought. If you are interested in applying, please email <cloudrouter-tsc@googlegroups.com>.
