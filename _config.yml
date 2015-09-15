@@ -16,3 +16,6 @@ collections:
     output: false
   in_the_news:
     output: false
+
+gems:
+  - jekyll-feed
