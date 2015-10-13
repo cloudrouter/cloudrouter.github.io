@@ -8,7 +8,7 @@ author: jkt
 
 I've been meaning to post this for a few weeks, and finally getting around to it.  The team over at [Packet Pushers](http://packetpushers.net/) were kind enough to cover the CloudRouter v2 Beta release a few weeks ago in [Network Break 45](http://packetpushers.net/podcast/podcasts/network-break-45/).  Thanks to [Greg](http://etherealmind.com/author/gregferro/) and [Drew](https://twitter.com/drewconrymurray) for their coverage.
 
-While I highly recommend listening to the whole podcast, here's the transcript of the portion concerning CloudRouter.  The [corresponding audio]({{ site.baseurl }}/content/uploads/2015/08/Network_Break_45_cloudrouter_clip.wav) is a great listen if you only have 5 minutes to devote!
+While I highly recommend listening to the whole podcast, here's the transcript of the portion concerning CloudRouter.  The [corresponding audio]({{ site.baseurl }}/wp-content/uploads/2015/08/Network_Break_45_cloudrouter_clip.wav) is a great listen if you only have 5 minutes to devote!
 
 ### Transcript
 

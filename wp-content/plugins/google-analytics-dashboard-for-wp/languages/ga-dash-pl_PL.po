@@ -1,0 +1,1065 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Analytics Dashboard for WP\n"
+"POT-Creation-Date: 2015-02-07 11:40+0200\n"
+"PO-Revision-Date: 2015-02-07 11:40+0200\n"
+"Last-Translator: Alin Marcu <admin@deconf.com>\n"
+"Language-Team: Deconf <admin@deconf.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ../.\n"
+
+#: .././admin/dashboard_widgets.php:67 .././admin/dashboard_widgets.php:100
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: .././admin/dashboard_widgets.php:71 .././admin/dashboard_widgets.php:104
+#: .././admin/ga_dash_settings.php:105 .././admin/ga_dash_settings.php:216
+#: .././admin/ga_dash_settings.php:964
+msgid "General Settings"
+msgstr "Ustawienia główne"
+
+#: .././admin/dashboard_widgets.php:75
+msgid "Backend Settings"
+msgstr "Ustawienia backendu"
+
+#: .././admin/dashboard_widgets.php:79
+msgid "Frontend Settings"
+msgstr "Ustawienia Frontendu"
+
+#: .././admin/dashboard_widgets.php:83
+msgid "Tracking Code"
+msgstr "Kod śledzenia"
+
+#: .././admin/dashboard_widgets.php:87 .././admin/dashboard_widgets.php:108
+#: .././admin/ga_dash_settings.php:89 .././admin/ga_dash_settings.php:200
+#: .././admin/ga_dash_settings.php:333 .././admin/ga_dash_settings.php:683
+#: .././admin/ga_dash_settings.php:882 .././admin/ga_dash_settings.php:1184
+msgid "Errors & Debug"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:152
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: .././admin/dashboard_widgets.php:166 .././front/widgets.php:14
+msgid "Google Analytics Dashboard"
+msgstr "Pulpit Google Analytics"
+
+#: .././admin/dashboard_widgets.php:183
+msgid "This plugin needs an authorization:"
+msgstr "Ta wtyczka wymaga autoryzacji:"
+
+#: .././admin/dashboard_widgets.php:183 .././admin/ga_dash_settings.php:1035
+#: .././admin/ga_dash_settings.php:1360
+msgid "Authorize Plugin"
+msgstr "Autoryzuj wtyczkę"
+
+#: .././admin/dashboard_widgets.php:216 .././admin/ga_dash_settings.php:380
+#: .././admin/ga_dash_settings.php:976 .././admin/ga_dash_settings.php:1001
+#: .././admin/ga_dash_settings.php:1315
+msgid "View Name:"
+msgstr "Nazwa widoku:"
+
+#: .././admin/dashboard_widgets.php:221
+msgid "Something went wrong while retrieving profiles list."
+msgstr "Coś poszło nie tak podczas pobierania listy profili."
+
+#: .././admin/dashboard_widgets.php:221
+msgid "More details"
+msgstr "Więcej szczegółów"
+
+#: .././admin/dashboard_widgets.php:234 .././admin/dashboard_widgets.php:245
+msgid "An admin should asign a default Google Analytics Profile."
+msgstr "Administrator poiwnien ustawić domyślny profil Google Analytics."
+
+#: .././admin/dashboard_widgets.php:234 .././admin/dashboard_widgets.php:245
+msgid "Select Domain"
+msgstr "Wybierz domenę"
+
+#: .././admin/dashboard_widgets.php:250
+msgid ""
+"Something went wrong while retrieving property data. You need to create and "
+"properly configure a Google Analytics account:"
+msgstr ""
+"Coś poszło nie tak podczas pobierania danych. Musisz stworzyc i odpowiednio "
+"skonfigurować konto Google Analytics:"
+
+#: .././admin/dashboard_widgets.php:250
+msgid "Find out more!"
+msgstr "Dowiedz sie więcej!"
+
+#: .././admin/dashboard_widgets.php:278
+msgid "Real-Time"
+msgstr "Czas rzeczywisty"
+
+#: .././admin/dashboard_widgets.php:279
+msgid "Today"
+msgstr "Dzisiaj"
+
+#: .././admin/dashboard_widgets.php:281
+msgid "Yesterday"
+msgstr "Wczoraj"
+
+#: .././admin/dashboard_widgets.php:283 .././front/widgets.php:72
+#: .././front/widgets.php:182
+msgid "Last 7 Days"
+msgstr "Ostatnie 7 dni"
+
+#: .././admin/dashboard_widgets.php:285 .././front/widgets.php:75
+#: .././front/widgets.php:183
+msgid "Last 14 Days"
+msgstr "Ostatnie 14 dni"
+
+#: .././admin/dashboard_widgets.php:287 .././front/widgets.php:78
+#: .././front/widgets.php:184
+msgid "Last 30 Days"
+msgstr "Ostatnie 30 dni"
+
+#: .././admin/dashboard_widgets.php:289
+msgid "Last 90 Days"
+msgstr "Ostatnie 90 dni"
+
+#: .././admin/dashboard_widgets.php:295 .././admin/dashboard_widgets.php:1037
+#: .././front/widgets.php:40 .././tools/gapi.php:376 .././tools/gapi.php:515
+#: .././tools/gapi.php:554 .././tools/gapi.php:615 .././tools/gapi.php:744
+#: .././tools/gapi.php:825
+msgid "Sessions"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:296 .././admin/dashboard_widgets.php:1041
+#: .././tools/gapi.php:364
+msgid "Users"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:298
+msgid "Organic"
+msgstr "Organiczne"
+
+#: .././admin/dashboard_widgets.php:300 .././admin/dashboard_widgets.php:1045
+#: .././tools/gapi.php:367
+msgid "Page Views"
+msgstr "Wyświetleń strony"
+
+#: .././admin/dashboard_widgets.php:302 .././admin/dashboard_widgets.php:1049
+#: .././tools/gapi.php:370
+msgid "Bounce Rate"
+msgstr "Współczynnik odrzuceń"
+
+#: .././admin/dashboard_widgets.php:304
+msgid "Location"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:306 .././tools/gapi.php:477
+msgid "Pages"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:308 .././tools/gapi.php:515
+msgid "Referrers"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:310 .././tools/gapi.php:554
+#: .././tools/gapi.php:825
+msgid "Searches"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:312
+msgid "Traffic Details"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:404 .././admin/dashboard_widgets.php:645
+msgid "REFERRAL"
+msgstr "REFERUJĄCY"
+
+#: .././admin/dashboard_widgets.php:408 .././admin/dashboard_widgets.php:646
+msgid "ORGANIC"
+msgstr "ORGANICZNE"
+
+#: .././admin/dashboard_widgets.php:412 .././admin/dashboard_widgets.php:532
+#: .././admin/dashboard_widgets.php:647
+msgid "SOCIAL"
+msgstr "SPOŁECZNE"
+
+#: .././admin/dashboard_widgets.php:416 .././admin/dashboard_widgets.php:535
+#: .././admin/dashboard_widgets.php:648
+msgid "CAMPAIGN"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:420 .././admin/dashboard_widgets.php:538
+#: .././admin/dashboard_widgets.php:651
+msgid "DIRECT"
+msgstr "BEZPOŚREDNIE"
+
+#: .././admin/dashboard_widgets.php:424 .././admin/dashboard_widgets.php:652
+msgid "NEW"
+msgstr "NOWE"
+
+#: .././admin/dashboard_widgets.php:526
+msgid "REFERRALS"
+msgstr "REFERUJĄCY"
+
+#: .././admin/dashboard_widgets.php:529
+msgid "KEYWORDS"
+msgstr "SŁOWA KLUCZOWE"
+
+#: .././admin/dashboard_widgets.php:683 .././admin/dashboard_widgets.php:780
+#: .././admin/dashboard_widgets.php:972 .././admin/dashboard_widgets.php:1083
+#: .././front/frontend.php:88
+msgid "A JavaScript Error is blocking plugin resources!"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:696 .././admin/dashboard_widgets.php:715
+#: .././admin/dashboard_widgets.php:793 .././admin/dashboard_widgets.php:824
+#: .././admin/dashboard_widgets.php:843 .././admin/dashboard_widgets.php:863
+#: .././admin/dashboard_widgets.php:986 .././admin/dashboard_widgets.php:1096
+#: .././admin/dashboard_widgets.php:1115 .././front/frontend.php:100
+#: .././front/frontend.php:119
+msgid "Invalid response, more details in JavaScript Console (F12)."
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:701 .././admin/dashboard_widgets.php:720
+#: .././admin/dashboard_widgets.php:798 .././admin/dashboard_widgets.php:810
+#: .././admin/dashboard_widgets.php:829 .././admin/dashboard_widgets.php:848
+#: .././admin/dashboard_widgets.php:868 .././admin/dashboard_widgets.php:991
+#: .././admin/dashboard_widgets.php:994 .././admin/dashboard_widgets.php:1101
+#: .././admin/dashboard_widgets.php:1120 .././front/frontend.php:105
+#: .././front/frontend.php:124 .././front/widgets.php:110
+msgid "This report is unavailable"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:880
+msgid "Traffic Mediums"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:896
+msgid "Visitor Type"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:912
+msgid "Social Networks"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:928
+msgid "Search Engines"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:1053
+msgid "Organic Search"
+msgstr ""
+
+#: .././admin/dashboard_widgets.php:1057
+msgid "Pages/Session"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:83 .././admin/ga_dash_settings.php:194
+#: .././admin/ga_dash_settings.php:327 .././admin/ga_dash_settings.php:855
+#: .././admin/ga_dash_settings.php:1157
+msgid "Settings saved."
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:85 .././admin/ga_dash_settings.php:196
+#: .././admin/ga_dash_settings.php:329 .././admin/ga_dash_settings.php:841
+#: .././admin/ga_dash_settings.php:851 .././admin/ga_dash_settings.php:857
+#: .././admin/ga_dash_settings.php:869 .././admin/ga_dash_settings.php:1118
+#: .././admin/ga_dash_settings.php:1143 .././admin/ga_dash_settings.php:1153
+#: .././admin/ga_dash_settings.php:1159 .././admin/ga_dash_settings.php:1171
+msgid "Cheating Huh?"
+msgstr "Oszukujemy, co?"
+
+#: .././admin/ga_dash_settings.php:89 .././admin/ga_dash_settings.php:200
+#: .././admin/ga_dash_settings.php:333 .././admin/ga_dash_settings.php:683
+#: .././admin/ga_dash_settings.php:882 .././admin/ga_dash_settings.php:1184
+msgid "Something went wrong, check"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:89 .././admin/ga_dash_settings.php:200
+#: .././admin/ga_dash_settings.php:333 .././admin/ga_dash_settings.php:683
+#: .././admin/ga_dash_settings.php:882 .././admin/ga_dash_settings.php:1184
+msgid "or"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:89 .././admin/ga_dash_settings.php:200
+#: .././admin/ga_dash_settings.php:333 .././admin/ga_dash_settings.php:683
+#: .././admin/ga_dash_settings.php:882 .././admin/ga_dash_settings.php:1184
+msgid "auhorize the plugin"
+msgstr "autoryzować wtyczkę"
+
+#: .././admin/ga_dash_settings.php:95
+msgid "Google Analytics Frontend Settings"
+msgstr "Ustawienia Frontendu Google Analytics"
+
+#: .././admin/ga_dash_settings.php:108 .././admin/ga_dash_settings.php:219
+msgid "Show stats to:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:152
+msgid " show page sessions and users in frontend (after each article)"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:168
+msgid " show page searches (after each article)"
+msgstr "pokaż wyszukiwania strony  (po każdym artykule)"
+
+#: .././admin/ga_dash_settings.php:177 .././admin/ga_dash_settings.php:305
+#: .././admin/ga_dash_settings.php:666 .././admin/ga_dash_settings.php:1025
+#: .././admin/ga_dash_settings.php:1351
+msgid "Save Changes"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:206
+msgid "Google Analytics Dashboard Settings"
+msgstr "Ustawienia Pulpitu Google Analytics"
+
+#: .././admin/ga_dash_settings.php:264
+msgid "disable Switch Profile/View functionality"
+msgstr "wyłącz funkcjonalność Przełączanie Profilu/Widoku"
+
+#: .././admin/ga_dash_settings.php:268
+msgid "Real-Time Settings"
+msgstr "Ustawienia Czasu Rzeczywistego"
+
+#: .././admin/ga_dash_settings.php:271
+msgid "Maximum number of pages to display on real-time tab:"
+msgstr "Maksymalna liczba stron wyświetlanych na karcie Czas Rzeczywisty:"
+
+#: .././admin/ga_dash_settings.php:276 .././admin/ga_dash_settings.php:292
+msgid "find out more"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:278 .././admin/ga_dash_settings.php:295
+msgid "about this feature"
+msgstr "o tej opcji"
+
+#: .././admin/ga_dash_settings.php:283
+msgid "Location Settings"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:287
+msgid "Target Geo Map to country:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:336
+msgid "The tracking component is disabled. You should set"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:336
+msgid "Tracking Options"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:336
+msgid "to"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:336 .././admin/ga_dash_settings.php:372
+msgid "Enabled"
+msgstr "Włączone"
+
+#: .././admin/ga_dash_settings.php:342
+msgid "Google Analytics Tracking Code"
+msgstr "Kod Śledzenia Google Analytics"
+
+#: .././admin/ga_dash_settings.php:351
+msgid "Basic Settings"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:352 .././admin/ga_dash_settings.php:431
+msgid "Events Tracking"
+msgstr "Śledzenie Zdarzeń"
+
+#: .././admin/ga_dash_settings.php:353 .././admin/ga_dash_settings.php:495
+msgid "Custom Definitions"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:354 .././admin/ga_dash_settings.php:623
+#: .././admin/ga_dash_settings.php:1328
+msgid "Exclude Tracking"
+msgstr "Wyklucz Śledzenie"
+
+#: .././admin/ga_dash_settings.php:355
+msgid "Advanced Settings"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:363
+msgid "Tracking Settings"
+msgstr "Ustawienia Śledzenia"
+
+#: .././admin/ga_dash_settings.php:366
+msgid "Tracking Options:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:370
+msgid "Disabled"
+msgstr "Wyłączone"
+
+#: .././admin/ga_dash_settings.php:380 .././admin/ga_dash_settings.php:1001
+msgid "Tracking ID:"
+msgstr "Tracking ID:"
+
+#: .././admin/ga_dash_settings.php:380 .././admin/ga_dash_settings.php:1001
+msgid "Default URL:"
+msgstr "Domyślny URL:"
+
+#: .././admin/ga_dash_settings.php:380 .././admin/ga_dash_settings.php:1001
+msgid "Time Zone:"
+msgstr "Strefa Czasowa:"
+
+#: .././admin/ga_dash_settings.php:385
+#, fuzzy
+msgid "Basic Tracking"
+msgstr "Śledzenie Zdarzeń"
+
+#: .././admin/ga_dash_settings.php:388
+msgid "Tracking Type:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:392
+msgid "Classic Analytics"
+msgstr "Klasyczne Analytics"
+
+#: .././admin/ga_dash_settings.php:394
+msgid "Universal Analytics"
+msgstr "Uniwerslane Analytics"
+
+#: .././admin/ga_dash_settings.php:408
+msgid " anonymize IPs while tracking"
+msgstr "ukryj adresy IP podczas śledzenia"
+
+#: .././admin/ga_dash_settings.php:423
+msgid " enable remarketing, demographics and interests reports"
+msgstr "włącz raporty zainteresować, remarketingowe i demograficzne"
+
+#: .././admin/ga_dash_settings.php:445
+msgid " track downloads, mailto and outbound links"
+msgstr "śledź pobrania, wysyłanie maili i linki wychodzące"
+
+#: .././admin/ga_dash_settings.php:449
+#, fuzzy
+msgid "Downloads Regex:"
+msgstr "Filtry Pobierania:"
+
+#: .././admin/ga_dash_settings.php:466
+msgid " track affiliate links matching this regex"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:470
+msgid "Affiliates Regex:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:487
+msgid " track fragment identifiers, hashmarks (#) in URI links"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:498
+msgid "Authors:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:508
+msgid "Publication Year:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:518
+msgid "Categories:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:528
+msgid "User Type:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:542
+#, fuzzy
+msgid "Advanced Tracking"
+msgstr "Śledzenie Zdarzeń"
+
+#: .././admin/ga_dash_settings.php:545
+msgid "Page Speed SR:"
+msgstr "Page Speed SR:"
+
+#: .././admin/ga_dash_settings.php:563
+#, fuzzy
+msgid " exclude events from bounce-rate calculation"
+msgstr "wyklucz zdarzenie kliknięcia z kalkulacji stawki odrzuceń"
+
+#: .././admin/ga_dash_settings.php:578
+msgid " enable enhanced link attribution"
+msgstr "włącz rozszerzone przypisywanie linków"
+
+#: .././admin/ga_dash_settings.php:592
+msgid " enable AdSense account linking"
+msgstr " włącz linkowanie konta AdSense"
+
+#: .././admin/ga_dash_settings.php:608
+msgid " enable cross domain tracking"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:612
+msgid "Cross Domains:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:626
+msgid "Exclude tracking for:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:687
+msgid "Google Analytics Errors & Debugging"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:697
+msgid "Errors & Details"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:698
+msgid "Plugin Settings"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:706
+msgid "For errors and/or other issues please check"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:706
+msgid "the plugin documentation page"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:706
+msgid "and related tutorials"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:710
+msgid "Last Error detected"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:715 .././admin/ga_dash_settings.php:728
+msgid "None"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:722
+msgid "Error Details"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:740
+msgid "Plugin Configuration"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:788 .././admin/ga_dash_settings.php:1072
+msgid ""
+"Loading the required libraries. If this results in a blank screen or a fatal "
+"error, try this solution:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:800 .././admin/ga_dash_settings.php:1084
+msgid "Plugin authorization succeeded."
+msgstr "Autoryzacja wtyczki pomyślna."
+
+#: .././admin/ga_dash_settings.php:816 .././admin/ga_dash_settings.php:1109
+msgid ""
+"The access code is <strong>NOT</strong> your <strong>Tracking ID</strong> "
+"(UA-XXXXX-X). Try again, and use the red link to get your access code"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:839 .././admin/ga_dash_settings.php:1141
+msgid "Cleared Cache."
+msgstr "Cache wyczyszczony."
+
+#: .././admin/ga_dash_settings.php:848 .././admin/ga_dash_settings.php:1150
+msgid "Token Reseted and Revoked."
+msgstr "Token wyczyszczony i wycofany."
+
+#: .././admin/ga_dash_settings.php:862 .././admin/ga_dash_settings.php:1164
+msgid "All other domains/properties were removed."
+msgstr "Wszystkie inne domeny/właściwości zostały usunięte."
+
+#: .././admin/ga_dash_settings.php:874 .././admin/ga_dash_settings.php:1176
+msgid "Google Analytics Settings"
+msgstr "Ustawienia Google Analytics"
+
+#: .././admin/ga_dash_settings.php:887 .././admin/ga_dash_settings.php:1189
+msgid "Use the red link (see below) to generate and get your access code!"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:898 .././admin/ga_dash_settings.php:1224
+msgid "Plugin Authorization"
+msgstr "Autoryzacja Wtyczki"
+
+#: .././admin/ga_dash_settings.php:902 .././admin/ga_dash_settings.php:1228
+msgid "You should watch the"
+msgstr "Powinienieś obejrzeć"
+
+#: .././admin/ga_dash_settings.php:902 .././admin/ga_dash_settings.php:1228
+msgid "video"
+msgstr "film"
+
+#: .././admin/ga_dash_settings.php:902 .././admin/ga_dash_settings.php:1228
+msgid "and read this"
+msgstr "i przeczytać"
+
+#: .././admin/ga_dash_settings.php:902 .././admin/ga_dash_settings.php:1228
+msgid "tutorial"
+msgstr "tutorial"
+
+#: .././admin/ga_dash_settings.php:902 .././admin/ga_dash_settings.php:1228
+msgid ""
+"before proceeding to authorization. This plugin requires a properly "
+"configured Google Analytics account"
+msgstr ""
+"przed ukończeniem autoryzacji. Ta wtyczka wymaga poprawnie skonfigurowanego "
+"konta Google Analytics"
+
+#: .././admin/ga_dash_settings.php:914 .././admin/ga_dash_settings.php:1239
+msgid " use your own API Project credentials"
+msgstr "użyj własnych danych logowania do API Projektu"
+
+#: .././admin/ga_dash_settings.php:921 .././admin/ga_dash_settings.php:1246
+msgid "API Key:"
+msgstr "Klucz API:"
+
+#: .././admin/ga_dash_settings.php:928 .././admin/ga_dash_settings.php:1254
+msgid "Client ID:"
+msgstr "ID Klienta:"
+
+#: .././admin/ga_dash_settings.php:936 .././admin/ga_dash_settings.php:1263
+msgid "Client Secret:"
+msgstr "Hasło Klienta:"
+
+#: .././admin/ga_dash_settings.php:954 .././admin/ga_dash_settings.php:1282
+msgid "Clear Authorization"
+msgstr "Czyść Autoryzację"
+
+#: .././admin/ga_dash_settings.php:958 .././admin/ga_dash_settings.php:1039
+#: .././admin/ga_dash_settings.php:1285 .././admin/ga_dash_settings.php:1363
+msgid "Clear Cache"
+msgstr "Czyść Cache"
+
+#: .././admin/ga_dash_settings.php:967
+msgid "Select Domain:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:980 .././admin/ga_dash_settings.php:1319
+msgid "Property not found"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:985
+msgid "and/or hide all other domains"
+msgstr "i/lub ukryj wszystkie inne domeny"
+
+#: .././admin/ga_dash_settings.php:988
+msgid "Hide Now"
+msgstr "Ukryj Teraz"
+
+#: .././admin/ga_dash_settings.php:1007
+msgid "Theme Color:"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1017
+msgid "A new frontend widget is available! To enable it, go to"
+msgstr "Nowy widget frontendu jest dostępny! Aby go włączyć, przejðź do"
+
+#: .././admin/ga_dash_settings.php:1017
+msgid "Appearance -> Widgets"
+msgstr "Wygląd -> Widgety"
+
+#: .././admin/ga_dash_settings.php:1017
+msgid "and look for Google Analytics Dashboard."
+msgstr "i poszukać Pulpit Google Analytics."
+
+#: .././admin/ga_dash_settings.php:1115
+msgid "Properties refreshed."
+msgstr "Właściwości Odświeżone"
+
+#: .././admin/ga_dash_settings.php:1201
+msgid "Network Setup"
+msgstr "Ustawienia Sieci"
+
+#: .././admin/ga_dash_settings.php:1216
+msgid " use a single Google Analytics account for the entire network"
+msgstr "Użyj jednego konta Google Analytics dla całej sieci"
+
+#: .././admin/ga_dash_settings.php:1288
+msgid "Refresh Properties"
+msgstr "Odśwież Właściwości"
+
+#: .././admin/ga_dash_settings.php:1294
+msgid "Properties/Views Settings"
+msgstr "Ustawienia Właściwości /Widoków"
+
+#: .././admin/ga_dash_settings.php:1342
+msgid " exclude Super Admin tracking for the entire network"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1394
+msgid "Setup Tutorial & Demo"
+msgstr "Ustaw Tutorial & Demo"
+
+#: .././admin/ga_dash_settings.php:1406
+msgid "Support & Reviews"
+msgstr "Wsparcie techniczne & Recenzje"
+
+#: .././admin/ga_dash_settings.php:1414
+msgid "Plugin documentation and support on"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1421
+msgid "Your feedback and review are both important,"
+msgstr "Twój komentarz i ocena są ważne,"
+
+#: .././admin/ga_dash_settings.php:1421
+msgid "rate this plugin"
+msgstr "oceń tą wtyczkę"
+
+#: .././admin/ga_dash_settings.php:1426
+msgid "Further Reading"
+msgstr "Inne Dokumenty"
+
+#: .././admin/ga_dash_settings.php:1434
+msgid "Improve search rankings"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1434
+msgid "by moving your website to HTTPS/SSL."
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1441
+msgid "Other"
+msgstr "Inne"
+
+#: .././admin/ga_dash_settings.php:1441
+msgid "WordPress Plugins"
+msgstr "Wtyczki WordPressa"
+
+#: .././admin/ga_dash_settings.php:1441
+msgid "written by the same author"
+msgstr "napisane przez tego samego autora"
+
+#: .././admin/ga_dash_settings.php:1446
+msgid "Other Services"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1453
+msgid "Speed up your website and plug into a whole"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1453
+msgid "new level of site speed"
+msgstr ""
+
+#: .././admin/ga_dash_settings.php:1460
+msgid "Web Analytics"
+msgstr "Web Analytics"
+
+#: .././admin/ga_dash_settings.php:1460
+msgid "service with users tracking at IP level."
+msgstr ""
+
+#: .././front/frontend.php:134
+msgid "Views vs UniqueViews"
+msgstr "Odsłon vs Odsłon Unikalnych"
+
+#: .././front/frontend.php:184
+msgid "Google Analytics Reports"
+msgstr ""
+
+#: .././front/widgets.php:15
+msgid "Will display your google analytics stats in a widget"
+msgstr "Wyświetli twoje statystyki Google Analytics na widgecie"
+
+#: .././front/widgets.php:40 .././tools/gapi.php:744
+msgid "trend"
+msgstr ""
+
+#: .././front/widgets.php:133
+msgid "Period:"
+msgstr "Okres:"
+
+#: .././front/widgets.php:133
+msgid "Sessions:"
+msgstr ""
+
+#: .././front/widgets.php:137
+msgid "generated by"
+msgstr "wygenerowane przez"
+
+#: .././front/widgets.php:147
+msgid "Google Analytics Stats"
+msgstr "Statystyki Google Analytics"
+
+#: .././front/widgets.php:154
+msgid "Title:"
+msgstr "Tytuł:"
+
+#: .././front/widgets.php:161
+msgid "Display:"
+msgstr "Wyświetlenie:"
+
+#: .././front/widgets.php:165
+msgid "Chart & Totals"
+msgstr "Wykres & Podsumowania"
+
+#: .././front/widgets.php:166
+msgid "Chart"
+msgstr "Wykres"
+
+#: .././front/widgets.php:167
+msgid "Totals"
+msgstr "Podsumowania"
+
+#: .././front/widgets.php:171
+msgid "Anonymize stats:"
+msgstr ""
+
+#: .././front/widgets.php:178
+msgid "Stats for:"
+msgstr "Statystyki dla:"
+
+#: .././front/widgets.php:188
+msgid "Give credits:"
+msgstr "Podziękuj:"
+
+#: .././tools/gapi.php:129
+msgid "Use this link to get your access code:"
+msgstr "Użyj tego linku, aby uzyskać kod dostępu:"
+
+#: .././tools/gapi.php:129
+msgid "Get Access Code"
+msgstr "Zdobądź Kod Dostępu"
+
+#: .././tools/gapi.php:134 .././tools/gapi.php:138
+msgid "Use the red link to get your access code!"
+msgstr ""
+
+#: .././tools/gapi.php:134
+msgid "Access Code:"
+msgstr "Kod Dostępu:"
+
+#: .././tools/gapi.php:146
+msgid "Save Access Code"
+msgstr "Zapisz Kod Dostępu"
+
+#: .././tools/gapi.php:373
+msgid "Organic Searches"
+msgstr "Wyszukiwania organiczne"
+
+#: .././tools/gapi.php:381
+msgid "Hour"
+msgstr "Godzina"
+
+#: .././tools/gapi.php:384 .././tools/gapi.php:744 .././tools/gapi.php:783
+msgid "Date"
+msgstr "Data"
+
+#: .././tools/gapi.php:477 .././tools/gapi.php:783
+msgid "Views"
+msgstr "Odsłon"
+
+#: .././tools/gapi.php:576
+msgid "Countries"
+msgstr ""
+
+#: .././tools/gapi.php:590
+msgid "Cities from"
+msgstr ""
+
+#: .././tools/gapi.php:644
+msgid "Channels"
+msgstr ""
+
+#: .././tools/gapi.php:698
+msgid "Type"
+msgstr "Typ"
+
+#: .././tools/gapi.php:783
+msgid "UniqueViews"
+msgstr "Odsłon Unikalnych"
+
+#~ msgid "Something went wrong, you need to"
+#~ msgstr "Coś poszło nie tak, musisz"
+
+#~ msgid "or properly configure your"
+#~ msgstr "lub poprawnie skonfigurować twoje"
+
+#~ msgid "Google Analytics account"
+#~ msgstr "konto Google Analytics"
+
+#~ msgid "(find out more"
+#~ msgstr "(dowiedz się więcej"
+
+#~ msgid ")"
+#~ msgstr ")"
+
+#~ msgid "Additional Stats & Charts"
+#~ msgstr "Dodatkowe Statystyki & Wykresy"
+
+#~ msgid "Target Geo Map to region:"
+#~ msgstr "Ustaw Geo Mapę na region:"
+
+#~ msgid "and render top"
+#~ msgstr "i wyrenderuj najlepsze"
+
+#~ msgid "cities (find out more"
+#~ msgstr "miasta (dowiedz się więcej"
+
+#~ msgid " show traffic overview"
+#~ msgstr "pokaż przegląd ruchu"
+
+#~ msgid " show top pages"
+#~ msgstr "pokaż najlepsze strony"
+
+#~ msgid " show top referrers"
+#~ msgstr "pokaż najlepszych referujących"
+
+#~ msgid " show top searches"
+#~ msgstr "pokaż najlepsze wyszukiwania"
+
+#~ msgid "Dumping log data."
+#~ msgstr "Zrzucanie danych lgowania."
+
+#~ msgid ""
+#~ "Something went wrong. Please check the Debugging Data section for "
+#~ "possible errors"
+#~ msgstr ""
+#~ "Coś poszło nie tak. Sprawdź sekcję Dane debugowania, aby zobaczyć błędy"
+
+#~ msgid "Debugging Data"
+#~ msgstr "Dane Debugowania"
+
+#~ msgid "Anonimize chart&#39;s stats:"
+#~ msgstr "Statystyki wykresu"
+
+#~ msgid "Top Searches"
+#~ msgstr "Najlepsze wyszukiwania"
+
+#~ msgid "Error Log"
+#~ msgstr "Dziennik błędów"
+
+#~ msgid "Visits"
+#~ msgstr "Wizyty"
+
+#~ msgid "Visitors"
+#~ msgstr "Odwiedzający"
+
+#~ msgid ""
+#~ "No stats available. Please check the Debugging Data section for possible "
+#~ "errors"
+#~ msgstr ""
+#~ "Brak statystyk. Sprawdź sekcję Dane debugowania, aby zobaczyć błędy."
+
+#~ msgid "Country/City"
+#~ msgstr "Państwo/Miasto"
+
+#~ msgid "Source"
+#~ msgstr "Źródło"
+
+#~ msgid "Traffic Sources"
+#~ msgstr "Źródła ruchu"
+
+#~ msgid "New vs. Returning"
+#~ msgstr "Nowi vs powracający"
+
+#~ msgid "Top Pages"
+#~ msgstr "Najlepsze strony"
+
+#~ msgid "Top Referrers"
+#~ msgstr "Najlepsi referujący"
+
+#~ msgid "Visits:"
+#~ msgstr "Wizyt:"
+
+#~ msgid "Visitors:"
+#~ msgstr "Odwiedzających:"
+
+#~ msgid "Page Views:"
+#~ msgstr "Wyświetleń strony:"
+
+#~ msgid "Bounce Rate:"
+#~ msgstr "Współczynnik odrzuceń:"
+
+#~ msgid "Organic Search:"
+#~ msgstr "Wyszukiwań organicznych:"
+
+#~ msgid "Pages per Visit:"
+#~ msgstr "Stron na wizytę:"
+
+#~ msgid ""
+#~ "This is a beta feature and is only available when using my Developer Key! "
+#~ "("
+#~ msgstr ""
+#~ "To jest opcja beta, która jest dostępna tylko przy użyciu Klucza "
+#~ "Programisty! ("
+
+#~ msgid "more about this feature"
+#~ msgstr "więcej o tej opcji"
+
+#~ msgid "RETURN"
+#~ msgstr "POWRACAJĄCE"
+
+#~ msgid "Visits from "
+#~ msgstr "Wizyty z"
+
+#~ msgid "Visits by Country"
+#~ msgstr "Wizyty wg Państwa"
+
+#~ msgid "Traffic Overview"
+#~ msgstr "Przegląd ruchu"
+
+#~ msgid " show page visits and visitors in frontend (after each article)"
+#~ msgstr "pokaż wizyty i odwiedzających na stronie (po każdym artykule)"
+
+#~ msgid " show Geo Map chart for visits"
+#~ msgstr "pokaż wykres Geo Mapy dla wizyt"
+
+#~ msgid "You can find support on"
+#~ msgstr "Możesz znaleźć wsparcie na"
+
+#~ msgid "service with visitors tracking at IP level."
+#~ msgstr "usługa śledzenia odwiedzających na poziomie IP."
+
+#~ msgid "Total Visits:"
+#~ msgstr "Całkowita Ilość Wizyt:"
+
+#~ msgid "PHP CURL is required. Please install/enable PHP CURL!"
+#~ msgstr "PHP CURL jest wymagany. Proszę zainstalować/włączyć PHP CURL!"
+
+#~ msgid "Options saved."
+#~ msgstr "Opcja zapisana."
+
+#~ msgid "Show stats to: "
+#~ msgstr "Pokazuj statystyki do: "
+
+#~ msgid "Update Options"
+#~ msgstr "Opcje Aktualizacji"
+
+#~ msgid "Tracking Options: "
+#~ msgstr "Opcje Śledzenia:"
+
+#~ msgid "Tracking Type: "
+#~ msgstr "Typ Śledzenia: "
+
+#, fuzzy
+#~ msgid "User Type: "
+#~ msgstr "Typ Śledzenia: "
+
+#~ msgid "Exclude tracking for: "
+#~ msgstr "Wyklucz śledzenie dla: "
+
+#~ msgid "Select Domain: "
+#~ msgstr "Wybierz Domenę: "
+
+#~ msgid "Theme Color: "
+#~ msgstr "Kolor tematu: "
+
+#~ msgid "&#39; trend"
+#~ msgstr "&#39; trend"
+
+#~ msgid "DeConf Help Center"
+#~ msgstr "DeConf Help Center"
+
+#~ msgid ""
+#~ " (watch this <a href='http://deconf.com/projects/google-analytics-"
+#~ "dashboard-for-wordpress/' target='_blank'>Step by step video tutorial</a>)"
+#~ msgstr ""
+#~ " (watch this <a href='http://deconf.com/projects/google-analytics-"
+#~ "dashboard-for-wordpress/' target='_blank'>Step by step video tutorial</a>)"

@@ -8,7 +8,7 @@ author: jkt
 
 Special thanks to Pavel Odintsov for providing much of the content for this blog.
 
-![Pavel Odintsov]({{ site.baseurl }}/content/uploads/2015/07/image00.jpg)
+![Pavel Odintsov]({{ site.baseurl }}/wp-content/uploads/2015/07/image00.jpg)
 
 CloudRouter distributes [FastNetMon](https://github.com/FastVPSEestiOu/fastnetmon), a high performance DoS/DDoS load analyzer built on top of multiple packet capture engines, including NetFlow, IPFIX, sFLOW, netmap, PF_RING, and PCAP.  FastNetMon is distributed under the GPLv2 license.  The project is led by [Pavel Odintsov](https://www.linkedin.com/in/podintsov), CTO at FastVPS in beautiful Saint Petersburg, Russia.
 
@@ -18,7 +18,7 @@ Pavel developer FastNetMon after searching for an open source solution to use at
 
 A typical deployment of FastNetMon is shown in the network map below.
 
-![Network Map]({{ site.baseurl }}/content/uploads/2015/07/image01.png)
+![Network Map]({{ site.baseurl }}/wp-content/uploads/2015/07/image01.png)
 
 Features include:
 
@@ -35,21 +35,21 @@ Features include:
 
 A view of the traffic dashboard for FastNetMon is shown below.
 
-![Traffic Dashboard]({{ site.baseurl }}/content/uploads/2015/07/image02.png)
+![Traffic Dashboard]({{ site.baseurl }}/wp-content/uploads/2015/07/image02.png)
 
 The next screen shows a mitigated attack in real-time.
 
-![Traffic Dashboard]({{ site.baseurl }}/content/uploads/2015/07/image03.png)
+![Traffic Dashboard]({{ site.baseurl }}/wp-content/uploads/2015/07/image03.png)
 
 The main program screen is shown below.
 
-![Program Screen]({{ site.baseurl }}/content/uploads/2015/07/image04.png)
+![Program Screen]({{ site.baseurl }}/wp-content/uploads/2015/07/image04.png)
 
 A flow refers to one or multiple udp, tcp, icmp connections with unique src IP, dst IP, src port, dst port, and protocol.
 
 Example CPU load on Intel i72600 with Intel X540/82599 NIC on 400kpps load:
 
-![CPU load]({{ site.baseurl }}/content/uploads/2015/07/image05.png)
+![CPU load]({{ site.baseurl }}/wp-content/uploads/2015/07/image05.png)
 
 At CloudRouter, we put a lot of focus on security.  We [harden key open source components such as the BIRD route server]({{ site.baseurl }}/cloudrouter/releases/2015/03/15/security-hardening-for-native-binaries-in-cloudrouter-components.html) and use a [dedicated Nitrokey signing server with a hardware security module (HSM)]({{ site.baseurl }}/cloudrouter/releases/2015/02/10/signing-rpms-using-the-nitrokey-hardware-security-module-hsm.html).  Ultimately, the strength of the CloudRouter distribution comes from great open source projects like FastNetMon.  Thanks Pavel for all your work.
 

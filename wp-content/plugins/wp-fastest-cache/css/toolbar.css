@@ -1,0 +1,21 @@
+#revert-loader-toolbar{
+    display: none;
+    background: rgba(255, 255, 255, .7) url(../images/loader.gif) no-repeat center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+}
+#wp-admin-bar-wpfc-toolbar-parent, #wp-admin-bar-wpfc-toolbar-parent-delete-cache, #wp-admin-bar-wpfc-toolbar-parent-delete-cache-and-minified{
+	cursor: pointer;
+}
+
+#wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before{
+	content: url("../images/icon-24x24.png");
+}
+
+#wp-admin-bar-wpfc-toolbar-parent .ab-empty-item:hover{
+	background-color: red;
+}
