@@ -16,6 +16,7 @@ The CloudRouter® Project is a collaborative open source project focused on deve
 What is ONOS and why did CloudRouter decide to include it if we're already shipping with OpenDaylight?  To help you fully understand ONOS, who is using it and why you might choose it, I sat down with Thomas Vachuska, chief architect for ONOS, to get the full story.
 
 **Jay Turner: What is ONOS?**
+
 THOMAS VACHUSKA: ONOS (Open Network Operating System) is an open source platform for developing network control applications and solutions.  It is designed to meet the demands of service provider networks, but it can certainly be applied to data center or campus networks as well.
 
 Size and criticality of service provider networks require any control platform to be highly available, scalable and to perform well.  To achieve these goals, ONOS has been designed to operate as a distributed symmetric cluster, with all the nodes of the cluster being software-wise identical, and therefore capable of adopting workloads from any other node as a result of load-balancing or failures.
