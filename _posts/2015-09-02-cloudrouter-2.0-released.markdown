@@ -6,8 +6,6 @@ categories: cloudrouter
 author: jkt 
 ---
 
-#CloudRouter 2.0 Released!#
-
 The CloudRouter® Project, the center for development of secure Linux-based open source routing and software-defined networking (SDN) technologies for large-scale cloud companies, data centers, enterprises, and network operators, today announces the general availability of CloudRouter 2.0.  This is the first release intended for production use and comes after a 160% increase in community contributions and rigorous testing in real-world product environments.
 
 I am thrilled to release this milestone, and wish to thank the community for all their support getting to this milestone.  Since the 1.0 Beta launch in February, the Project has added 224 new packages.  Key additions include [ONOS](http://onosproject.org) for SDN architectures, [FastNetMon](https://github.com/FastVPSEestiOu/fastnetmon) for DDoS analysis, and [BGPStream](http://www.caida.org/~chiara/bgpstream-doc/bgpstream/) for BGP/ASN monitoring.

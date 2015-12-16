@@ -6,8 +6,6 @@ categories: cloudrouter
 author: jkt 
 ---
 
-#What You Need to Know about ONOS and the Group's Chief Architect#
-
 ![Interview]({{ site.baseurl }}/wp-content/uploads/2015/10/image00.png)
 
 
