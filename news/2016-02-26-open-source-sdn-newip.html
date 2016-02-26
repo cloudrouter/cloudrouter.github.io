@@ -1,0 +1,52 @@
+---
+layout: general_page
+title: News
+---
+
+<h2>Open Source & SDN: Five Degrees of Transformation</h2>
+<p>
+26 Feb 2016 - The New IP - <a href="http://www.thenewip.net/author.asp?section_id=374&doc_id=721350&">Link</a>
+<p>
+Open source projects cooperate with each other; through this cooperation, we can transform the network architecture and spread the adoption of SDN faster than proprietary vendors.
+<p>
+One example of cooperation is my recent work with Arpit Gupta from Princeton University's <a href="https://www.cs.princeton.edu/">Computer Science Department</a> and head of the <a href="https://github.com/sdn-ixp/iSDX">iSDX project</a>, an industry-scale SDX controller. The iSDX project, together with other open source ventures, is addressing one of the biggest hurdles to software-defined networking (SDN) adoption -- cost.
+<p>
+But cost is not the only barrier to SDN adoption -- and not the only barrier that open source can help overcome. Below I've outlined five ways open source can transform carrier and enterprise SDN.
+<p>
+<h3>Open source: Gateway to SDN</h3>
+<p>
+People are installing open source networking technology on white box equipment today for basic routing and switching functions. They often don't use the more advanced SDN features. That's okay.
+<p>
+Open source can be your key to SDN because open source routing on white boxes acts as a bridge between older architectures and newer SDN architectures. Once you have an open source networking platform running on white box hardware for simple BGP4 routing, you immediately also have a box that handles advanced SDN functions at no additional cost.
+<p>
+<h3>Open source: Cost-Cutter</h3>
+<p>
+While some vendors' advanced SDN switches can cost $100,000 or more, open source projects are figuring out how to get the same functionality on equipment that costs much less. As it stands today, adoption of SDN means translating network routes into something which must be stored and processed -- for example, OpenFlow, intents, or some other form of rules.
+<p>
+Today each piece of networking hardware has a table of destinations where it needs to get to. Destinations are stored as Forwarding Information Base (FIB) numbers. When you start going down the SDN path, you must tell more gear where things are, point by point, like on a map. To do this, a place like the German Internet Exchange would require 30 million routes.
+<p>
+Needing tens of millions of routes is common -- in fact, in my own network at IIX, we have a similar number. The flexibility of open source allows implementation of new technology that reduces 20 million routes down to 100,000 routes; this is part of my research with Princeton University's iSDX project.
+<p>
+<h3>Open source: Efficiency Master</h3>
+<p>
+Today, a static network is inefficient. Enterprises, hampered by issues related to a move to cloud architecture, demand dynamic networks, capable of being flexed to benefit the business and its customers.
+<p>
+SDN empowers a very nimble approach to networking needs. It is the Leatherman of networks, allowing for network adaption in near real-time instead of depending on a staid network design to satisfy the 80% case. In a traditional network, routes are largely static, meaning the network administrator anticipates bandwidth requirements to a site or set of application servers and configures the routes manually. This satisfies 80% of the cases. In 20% of the cases, the network gets bogged down with usage spikes or security attacks. To make the network more flexible, software is needed to automatically change routes to respond to load. Network equipment based on open source on white boxes will either have SDN software on it or it will be easily added. This makes it much easier to use low-cost open source on white box equipment to improve efficiency.
+<p>
+Denial of service (DoS) attacks are a good example where SDN empowers a proactive approach -- where the legacy approach mandates recognizing the situation, determining the proper mitigation, enacting that mitigation, and then cleaning up any leftover mess.
+<p>
+Open source networking is the best way to overcome these barriers as it allows a low-cost, incremental deployment of equipment that is extremely flexible.
+<p>
+<h3>Open source: Easy Upgrade</h3>
+<p>
+The SDN space is a difficult gig. It will remain that way for a while. Most enterprises look at SDN and leave feeling that if it isn't broken, why fix it? They have enormous investment in legacy networking gear, sales reps at those hardware vendors actively targeting the SDN agenda, and network staff who are very much ingrained and beholden to their own day-to-day tasks.
+<p>
+It's difficult to justify the budget for an upgrade to expensive SDN gear. Usually, network performance will not improve dramatically after the upgrade. Network performance will increase only when enough SDN gear and software is installed to make the network adaptive. You have to buy and deploy a lot of expensive gear to get the big gains. By contrast, open source on white box is an easy, incremental upgrade. The open source gear can provide traditional network functions such as static routing at low cost and the same gear can be used for SDN architectures with a free open source software upgrade.
+<p>
+<h3>Open source: Bridge Old and New</h3>
+<p>
+Open source networking is a bridge between old and new, a very adaptable bridge that will certainly support future technologies, standards and specifications. The flexibility and transparency of open source networking means you'll be able to adapt your network as standards change and you can see when network limits are being reached.
+<p>
+For example, open source is the best solution to deal with the ambiguity of OpenFlow-1.3 compliance. Right now, the standard doesn't address the number of flows you need. Compliance with OpenFlow-1.3 could mean handling 1 million routes or 2,048 routes. With the flexibility of open source on white boxes, a network administrator today can deploy equipment with basic, inexpensive functionality that works with a traditional architecture, and then change or upgrade the software in the future at no additional cost when standards change. It's the perfect way to bridge what we have today with what we'll need in the future.
+<p>
+Although the research and education community is doing much of the heavy lifting in SDN innovation today, I anticipate as more and more critical enterprise infrastructure moves to the cloud, enterprises will be forced to see there is a better way to deploy and control their networks. The future of enterprise infrastructure will involve open source networking and it will be a bright future -- but we have a long way to go and open source collaboration is a step in the right direction. Traditionally, open source networking stack has lagged behind other open source stacks, notably cloud infrastructure, software development infrastructure, and Internet software such as email and web servers. With recent innovations to the Linux kernel, networking hardware, and an increase in open source projects, the open source networking community is shifting into high gear. If you haven't looked at open source networking for a while, it's a good time to download the code or installation images and see just how far it’s come.
