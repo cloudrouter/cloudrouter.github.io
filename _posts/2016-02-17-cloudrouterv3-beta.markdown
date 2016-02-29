@@ -8,11 +8,6 @@ author: jkt
 
 The CloudRouter® Project team is happy to announce the release of CloudRouter 3.0 Beta.  This release includes an upgrade to the supported base operating systems, from Fedora 22 to 23, and from CentOS 7.1 to 7.2.  It also includes updates to key packages including DPDK, ONOS, and OpenDaylight, as well as several new packages.  One of these new packages is the [iSDX demo application](https://cloudrouter.org/cloudrouter/2016/01/19/isdx-release.html), developed by a team at Princeton University, which is paving new ground in the world of carrier-grade SDN - check it out!
 
-Get the Beta!
-
-[CloudRouter CentOS](https://repo.cloudrouter.org/centos/testing/)
-[CloudRouter Fedora](https://repo.cloudrouter.org/centos/testing/)
-
 Summary of changes in the Beta
 
 * CloudRouter rebased:
