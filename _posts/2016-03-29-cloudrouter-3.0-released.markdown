@@ -29,7 +29,7 @@ CloudRouter 3.0 new key features summary:
 
 CloudRouter 3.0 DPDK [performance test results]({{ site.baseurl }}/wp-content/uploads/2016/03/MellanoxTestResults.pdf).
 
-CloudRouter 3.0 Production is available now for download and use. 
+CloudRouter 3.0 Production is available now for [download](https://repo.cloudrouter.org/3/) and use. 
 
 **About the CloudRouter Project**
 
