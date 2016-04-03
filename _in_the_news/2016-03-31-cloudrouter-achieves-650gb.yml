@@ -1,0 +1,7 @@
+---
+title: CloudRouter Achieves 650 Gb/s & Expands Into SDN
+outlet: SDxCentral
+link: https://cloudrouter.org/news/2016-03-31-cloudrouter-achieves-650gb.html
+date: 2016-03-31 09:10:11
+excerpt: The Linux-based CloudRouter Project, which is working on code for an open source virtual router, released version 3.0 this week. It adds Linux Data Plane Development Kit (DPDK) kernel enhancements and claims throughput in excess of 650 Gb/s on commodity hardware.
+---
