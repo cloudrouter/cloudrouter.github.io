@@ -6,7 +6,7 @@ permalink: /security/
 
 ## Package signing
 
-CloudRouter 2.0 beta is a Fedora Remix. Most packages are provided by the Fedora repositories. For details on how these packages are signed, see the <a href="http://fedoraproject.org/wiki/Release_package_signing">Fedora documentation</a>. Additional packages such as OpenDaylight are provided by the CloudRouter repositories. These packages are signed using the CloudRouter Project key:
+CloudRouter 3.0 is a Fedora Remix. Most packages are provided by the Fedora repositories. For details on how these packages are signed, see the <a href="http://fedoraproject.org/wiki/Release_package_signing">Fedora documentation</a>. Additional packages such as OpenDaylight are provided by the CloudRouter repositories. These packages are signed using the CloudRouter Project key:
 
 {% comment %}
 TODO for enterprise

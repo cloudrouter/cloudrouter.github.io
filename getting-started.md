@@ -8,7 +8,7 @@ permalink: /getting-started/
 
 CloudRouter is a software-based router designed to run on physical, virtual and cloud environments, supporting software-defined networking infrastructure. It includes the features of traditional hardware routers, as well as support for emerging technologies such as containers and software-defined interconnection. CloudRouter aims to facilitate migration to the cloud without giving up control over network routing and governance. 
 
-CloudRouter 2.0 is now available! Read the release notes [here](https://cloudrouter.org/cloudrouter/releases/2015/09/02/cr2-ga-release-notes.html). 
+CloudRouter 3.0 is now available! Read the announcement [here](https://cloudrouter.org/cloudrouter/2016/03/29/cloudrouter-3.0-released.html). 
 
 CloudRouter is built as a [Fedora Remix](https://fedoraproject.org/wiki/Remix) and a [CentOS variant](https://www.centos.org/variants/). 
 
@@ -58,7 +58,7 @@ The `if=` argument provides the location of the live image, and the `of=` argume
  
 2. Note the filepath of your downloaded CloudRouter image:
 	
-	`~/Home/Downloads/CloudRouter-Live-2.0-fedora.iso`	
+	`~/Home/Downloads/CloudRouter-Live-3.0-fedora.iso`	
 	 
 3. Find out the allocated name of your USB device by running the **lsblk** command: 
 
@@ -80,7 +80,7 @@ The `if=` argument provides the location of the live image, and the `of=` argume
 
 4. Once you have the download location and the device location, and your device is unmounted, you can run the **dd** command: 
 
-   `sudo dd if=~/Home/Downloads/CloudRouter-Live-2.0-fedora.iso of=/dev/sdb` 
+   `sudo dd if=~/Home/Downloads/CloudRouter-Live-3.0-fedora.iso of=/dev/sdb` 
    
    The **dd** utility works silently; do not interrupt the process. It might take some time to run, depending on the available RAM and the image size. Once it's completed, you should see an output like this: 
    
