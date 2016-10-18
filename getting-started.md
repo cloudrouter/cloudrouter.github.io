@@ -8,7 +8,7 @@ permalink: /getting-started/
 
 CloudRouter is a software-based router designed to run on physical, virtual and cloud environments, supporting software-defined networking infrastructure. It includes the features of traditional hardware routers, as well as support for emerging technologies such as containers and software-defined interconnection. CloudRouter aims to facilitate migration to the cloud without giving up control over network routing and governance. 
 
-CloudRouter 3.0 is now available! Read the announcement [here](https://cloudrouter.org/cloudrouter/2016/03/29/cloudrouter-3.0-released.html). 
+CloudRouter 4.0 is now available! Read the announcement [here](https://cloudrouter.org/cloudrouter/2016/10/18/cloudrouter-4.0-released.html). 
 
 CloudRouter is built as a [Fedora Remix](https://fedoraproject.org/wiki/Remix) and a [CentOS variant](https://www.centos.org/variants/). 
 
