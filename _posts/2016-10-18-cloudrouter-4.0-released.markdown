@@ -16,9 +16,9 @@ According to Jay Turner, head of the CloudRouter Project, “After we shipped DP
 
 The layer 3 implementation is important to the growing number of businesses deploying CloudRouter. Between CloudRouter 3.0 and CloudRouter 4.0 the community grew by 34%.
 
-As part of the CloudRouter 4.0 release, the team partnered with Intel to test their GigE cards with FD.io. Tests results for Intel Ethernet Converged Network Adapter X710 GbE are available. 
+As part of the CloudRouter 4.0 release, the team partnered with Intel to test their GigE cards with FD.io. Tests results for [Intel Ethernet Converged Network Adapter X710 GbE]({{ site.baseurl }}/wp-content/uploads/2016/10/vpp_perf_test_ixnetwork_2x10g_v4_routed_1_flow.pdf) are available. Test results for [Intel Ethernet Converged Network Adapter XL710 40GbE]({{ site.baseurl }}/wp-content/uploads/2016/10/vpp_perf_test_ixnetwork_2x40g_v4_routed_4flows.pdf) are also available.
 
-“Our tests show that Intel Ethernet Converged Network Adapter X710 GbE cards have excellent performance with CloudRouter,” said Jay Turner. “We plan to expand our testing with other vendors and welcome cooperation from other hardware and software groups. Please contribute code or contact us about joint-testing.”
+“Our tests show that Intel Ethernet Converged Network Adapter XL710 GbE cards have excellent performance with CloudRouter,” said Jay Turner. “We plan to expand our testing with other vendors and welcome cooperation from other hardware and software groups. Please contribute code or contact us about joint-testing.”
 
 CloudRouter 4.0 new features summary:
 
