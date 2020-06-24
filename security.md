@@ -43,7 +43,7 @@ Anyone can post to this list. The subscribers are only trusted individuals who w
 #### Credit
 {% for reporter in advisory.reporters %}
 {% assign num_issues_reported = reporter.reported | size %}
-Issue{% if num_issues_reported > 1 %}s{% endif %} {{ reporter.reported | join: " " }} {% if num_issues_reported > 1 %}were{% else %}was{% endif %} reported by {{ reporter.name }} of {{reporter.affiliation }}.
+Issue{% if num_issues_reported > 1 %}s{% endif %} {{ reporter.reported | join: " " }} {% if num_issues_reported > 1 %}were{% else %}was{% endif %} reported by {{ reporter.name }}{% if reporter.affiliation != "" and reporter.affiliation != nil%} of {{reporter.affiliation }}{% endif %}.
 {% endfor %}
 
 {% endfor %}
